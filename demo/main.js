@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: 'modules/',
+    baseUrl: '../src/',
     paths: {
         'jquery': '//code.jquery.com/jquery-2.1.4.min'
     }
