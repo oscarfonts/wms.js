@@ -1,0 +1,3018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities version="1.3.0" updateSequence="1695" xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wms http://geoportal.ambiente.gob.ec:80/geoserver/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>Servicio WMS del Ministerio del Ambiente</Title>
+    <Abstract>Servico de Mapas del ministerio del ambinete .sdkfjkdpjsdflks sdjoi</Abstract>
+    <KeywordList>
+      <Keyword>WFS</Keyword>
+      <Keyword>WMS</Keyword>
+      <Keyword>GEOSERVER</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="http://mapainteractivo.ambiente.gob.ec"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>Danny Llumipanta</ContactPerson>
+        <ContactOrganization>Ministerio del Ambiente</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>Especialista de nuevos desarrollos</ContactPosition>
+      <ContactAddress>
+        <AddressType>Trabajo</AddressType>
+        <Address>Av. Madrid y Andalucia</Address>
+        <City>Quito</City>
+        <StateOrProvince>Pichincha</StateOrProvince>
+        <PostCode/>
+        <Country>Ecuador</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone>(394) 02 3987-600</ContactVoiceTelephone>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>danny.llumipanta@ambiente.gob.ec</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>NONE</Fees>
+    <AccessConstraints>NONE</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/pdf</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <Layer>
+      <Title>Servicio WMS del Ministerio del Ambiente</Title>
+      <Abstract>Servico de Mapas del ministerio del ambinete .sdkfjkdpjsdflks sdjoi</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:32717</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>EPSG:900913</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>-94.88932563743136</westBoundLongitude>
+        <eastBoundLongitude>-75.13438019021159</eastBoundLongitude>
+        <southBoundLatitude>-5.060653147789146</southBoundLatitude>
+        <northBoundLatitude>4.622970643365165</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="-94.88932563743136" miny="-5.060653147789146" maxx="-75.13438019021159" maxy="4.622970643365165"/>
+      <BoundingBox CRS="EPSG:32717" minx="-1060991.9754385995" miny="9423756.740758253" maxx="1153842.6917790957" maxy="1.0526417150238598E7"/>
+      <BoundingBox CRS="EPSG:4326" minx="-5.060653147789146" miny="-94.88932563743136" maxx="4.622970643365165" maxy="-75.13438019021159"/>
+      <BoundingBox CRS="EPSG:3857" minx="-1.0563031411675977E7" miny="-564083.2410198702" maxx="-8363920.943842574" maxy="515186.0391131625"/>
+      <BoundingBox CRS="EPSG:900913" minx="-1.0563031411675977E7" miny="-564083.2410198702" maxx="-8363920.943842574" maxy="515186.0391131625"/>
+      <Layer queryable="1">
+        <Name>geosuia:abc_propiedad_cole_2015</Name>
+        <Title>abc_propiedad_cole_2015</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>abc_propiedad_cole_2015</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.8013687133789</westBoundLongitude>
+          <eastBoundLongitude>-75.188117980957</eastBoundLongitude>
+          <southBoundLatitude>-4.65493106842041</southBoundLatitude>
+          <northBoundLatitude>1.43281221389771</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.8013687133789" miny="-4.65493106842041" maxx="-75.188117980957" maxy="1.43281221389771"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.65493106842041" miny="-80.8013687133789" maxx="1.43281221389771" maxy="-75.188117980957"/>
+        <BoundingBox CRS="EPSG:32717" minx="522030.3135419606" miny="9482814.257246185" maxx="1147819.136749902" maxy="1.015919260947194E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8994767.220572885" miny="-518755.5506682556" maxx="-8369903.007344709" maxy="159516.55292059356"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8994767.220572885" miny="-518755.5506682556" maxx="-8369903.007344709" maxy="159516.55292059356"/>
+        <Style>
+          <Name>beneficiario_comunitario3</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=abc_propiedad_cole_2015"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:abc_propiedad_ind_2015</Name>
+        <Title>abc_propiedad_ind_2015</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>abc_propiedad_ind_2015</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.8075637817383</westBoundLongitude>
+          <eastBoundLongitude>-75.455207824707</eastBoundLongitude>
+          <southBoundLatitude>-4.99873065948486</southBoundLatitude>
+          <northBoundLatitude>1.44060516357422</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.8075637817383" miny="-4.99873065948486" maxx="-75.455207824707" maxy="1.44060516357422"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.99873065948486" miny="-80.8075637817383" maxx="1.44060516357422" maxy="-75.455207824707"/>
+        <BoundingBox CRS="EPSG:32717" minx="521332.47209780413" miny="9444874.295801455" maxx="1117955.7070495863" maxy="1.015998380055429E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8995456.852428082" miny="-557163.4153202557" maxx="-8399635.312747015" maxy="160384.3329139733"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8995456.852428082" miny="-557163.4153202557" maxx="-8399635.312747015" maxy="160384.3329139733"/>
+        <Style>
+          <Name>beneficiario_individual3</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=abc_propiedad_ind_2015"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:bioclima</Name>
+        <Title>bioclima</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>bioclima</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.00406732266553</westBoundLongitude>
+          <eastBoundLongitude>-75.15314821606913</eastBoundLongitude>
+          <southBoundLatitude>-5.007885956453845</southBoundLatitude>
+          <northBoundLatitude>1.4518916834412172</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.00406732266553" miny="-5.007885956453845" maxx="-75.15314821606913" maxy="1.4518916834412172"/>
+        <BoundingBox CRS="EPSG:32717" minx="499549.125" miny="9446464.0" maxx="1149285.125" maxy="1.0160478E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.007885956453845" miny="-81.00406732266553" maxx="1.4518916834412172" maxy="-75.15314821606913"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9017331.526543178" miny="-558186.4765249618" maxx="-8366010.190924231" maxy="161641.1429263562"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9017331.526543178" miny="-558186.4765249618" maxx="-8366010.190924231" maxy="161641.1429263562"/>
+        <Style>
+          <Name>BIOCLIMA</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bioclima"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:bloques_petroleros</Name>
+        <Title>bloques_petroleros</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>bloques_petroleros</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.39301678009211</westBoundLongitude>
+          <eastBoundLongitude>-75.21464708200499</eastBoundLongitude>
+          <southBoundLatitude>-3.5514658291262857</southBoundLatitude>
+          <northBoundLatitude>0.4581631516917825</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.39301678009211" miny="-3.5514658291262857" maxx="-75.21464708200499" maxy="0.4581631516917825"/>
+        <BoundingBox CRS="EPSG:32717" minx="456350.15625" miny="9607442.0" maxx="1143643.0" maxy="1.0050642E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.5514658291262857" miny="-81.39301678009211" maxx="0.4581631516917825" maxy="-75.21464708200499"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9060629.182088226" miny="-395600.77258330607" maxx="-8372856.213364575" maxy="51003.03229983898"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9060629.182088226" miny="-395600.77258330607" maxx="-8372856.213364575" maxy="51003.03229983898"/>
+        <Style>
+          <Name>bloques_petroleros_infopriv</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bloques_petroleros"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:bloques_petroleros_infopriv</Name>
+        <Title>bloques_petroleros_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>bloques_petroleros_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.39301678009211</westBoundLongitude>
+          <eastBoundLongitude>-75.21464708200499</eastBoundLongitude>
+          <southBoundLatitude>-3.5514658291262857</southBoundLatitude>
+          <northBoundLatitude>0.4581631516917825</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.39301678009211" miny="-3.5514658291262857" maxx="-75.21464708200499" maxy="0.4581631516917825"/>
+        <BoundingBox CRS="EPSG:32717" minx="456350.15625" miny="9607442.0" maxx="1143643.0" maxy="1.0050642E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.5514658291262857" miny="-81.39301678009211" maxx="0.4581631516917825" maxy="-75.21464708200499"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9060629.182088226" miny="-395600.77258330607" maxx="-8372856.213364575" maxy="51003.03229983898"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9060629.182088226" miny="-395600.77258330607" maxx="-8372856.213364575" maxy="51003.03229983898"/>
+        <Style>
+          <Name>bloques_petroleros_infopriv</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bloques_petroleros_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:camaroneras_desalojadas</Name>
+        <Title>camaroneras_desalojadas</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>camaroneras_desalojadas</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-79.83913625899338</westBoundLongitude>
+          <eastBoundLongitude>-79.61701286488979</eastBoundLongitude>
+          <southBoundLatitude>-2.6285609912043184</southBoundLatitude>
+          <northBoundLatitude>-2.350014598979413</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-79.83913625899338" miny="-2.6285609912043184" maxx="-79.61701286488979" maxy="-2.350014598979413"/>
+        <BoundingBox CRS="EPSG:32717" minx="629076.000001907" miny="9709403.0" maxx="653746.0" maxy="9740175.23623085"/>
+        <BoundingBox CRS="EPSG:4326" minx="-2.6285609912043184" miny="-79.83913625899338" maxx="-2.350014598979413" maxy="-79.61701286488979"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8887651.993725928" miny="-292712.76799116377" maxx="-8862925.330601042" maxy="-261675.80705705084"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8887651.993725928" miny="-292712.76799116377" maxx="-8862925.330601042" maxy="-261675.80705705084"/>
+        <Style>
+          <Name>camaroneras_desalojadas</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=camaroneras_desalojadas"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:campos_petroleros_infopriv</Name>
+        <Title>campos_petroleros_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>campos_petroleros_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.88330237004283</westBoundLongitude>
+          <eastBoundLongitude>-75.4387699184532</eastBoundLongitude>
+          <southBoundLatitude>-2.4044399968969015</southBoundLatitude>
+          <northBoundLatitude>0.3913820699654513</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.88330237004283" miny="-2.4044399968969015" maxx="-75.4387699184532" maxy="0.3913820699654513"/>
+        <BoundingBox CRS="EPSG:32717" minx="846982.4375" miny="9733839.0" maxx="1119264.25" maxy="1.0043324E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-2.4044399968969015" miny="-77.88330237004283" maxx="0.39138206996545133" maxy="-75.4387699184532"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8669929.561131723" miny="-267739.63342718035" maxx="-8397805.453393135" maxy="43568.79156470451"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8669929.561131723" miny="-267739.63342718035" maxx="-8397805.453393135" maxy="43568.79156470451"/>
+        <Style>
+          <Name>campos_petroleros_infopriv</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=campos_petroleros_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:campos_petroleros_infopublic</Name>
+        <Title>campos_petroleros_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>campos_petroleros_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.88330237004283</westBoundLongitude>
+          <eastBoundLongitude>-75.4387699184532</eastBoundLongitude>
+          <southBoundLatitude>-2.4044399968969015</southBoundLatitude>
+          <northBoundLatitude>0.3913820699654513</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.88330237004283" miny="-2.4044399968969015" maxx="-75.4387699184532" maxy="0.3913820699654513"/>
+        <BoundingBox CRS="EPSG:32717" minx="846982.4375" miny="9733839.0" maxx="1119264.25" maxy="1.0043324E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-2.4044399968969015" miny="-77.88330237004283" maxx="0.39138206996545133" maxy="-75.4387699184532"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8669929.561131723" miny="-267739.63342718035" maxx="-8397805.453393135" maxy="43568.79156470451"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8669929.561131723" miny="-267739.63342718035" maxx="-8397805.453393135" maxy="43568.79156470451"/>
+        <Style>
+          <Name>campos_petroleros_infopriv</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=campos_petroleros_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_bosques_protectores</Name>
+        <Title>Bosques y Vegetación Protectora</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>car_bosques_protectores</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.8094798533534</westBoundLongitude>
+          <eastBoundLongitude>-75.83398224801634</eastBoundLongitude>
+          <southBoundLatitude>-4.750228792735156</southBoundLatitude>
+          <northBoundLatitude>1.1246005242239165</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.8094798533534" miny="-4.750228792735156" maxx="-75.83398224801634" maxy="1.1246005242239165"/>
+        <BoundingBox CRS="EPSG:32717" minx="521200.09375" miny="9474942.0" maxx="1073675.375" maxy="1.0124303E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.750228792735156" miny="-80.8094798533534" maxx="1.1246005242239165" maxy="-75.83398224801634"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8995670.148544598" miny="-529399.8780913426" maxx="-8441800.288675327" maxy="125197.99687540895"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8995670.148544598" miny="-529399.8780913426" maxx="-8441800.288675327" maxy="125197.99687540895"/>
+        <Style>
+          <Name>bosques_protectores</Name>
+          <Title>Bosques protectores</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_bosques_protectores"/>
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>25000.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.7976931348623157E308</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_forestal</Name>
+        <Title>Patrimonio Forestal</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>car_forestal</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.08282562103236</westBoundLongitude>
+          <eastBoundLongitude>-75.22965923794168</eastBoundLongitude>
+          <southBoundLatitude>-3.030394256668226</southBoundLatitude>
+          <northBoundLatitude>1.3259184598094633</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.08282562103236" miny="-3.030394256668226" maxx="-75.22965923794168" maxy="1.3259184598094633"/>
+        <BoundingBox CRS="EPSG:32717" minx="602062.6875" miny="9665004.0" maxx="1142299.375" maxy="1.0146573E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.030394256668226" miny="-80.08282562103236" maxx="1.3259184598094633" maxy="-75.22965923794168"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8914779.369419843" miny="-337499.33512993617" maxx="-8374527.358919156" maxy="147613.74377062224"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8914779.369419843" miny="-337499.33512993617" maxx="-8374527.358919156" maxy="147613.74377062224"/>
+        <Style>
+          <Name>bosques_protectores</Name>
+          <Title>Bosques protectores</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_forestal"/>
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>25000.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.7976931348623157E308</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_pane</Name>
+        <Title>Patrimonio de Áreas Naturales del Estado</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>car_pane</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-92.62318619352232</westBoundLongitude>
+          <eastBoundLongitude>-75.20178987724705</eastBoundLongitude>
+          <southBoundLatitude>-4.798962003085918</southBoundLatitude>
+          <northBoundLatitude>2.2907853667452067</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-92.62318619352232" miny="-4.798962003085918" maxx="-75.20178987724705" maxy="2.2907853667452067"/>
+        <BoundingBox CRS="EPSG:32717" minx="-797920.625" miny="9469558.0" maxx="1144064.125" maxy="1.0253202E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.798962003085918" miny="-92.62318619352232" maxx="2.2907853667452067" maxy="-75.20178987724705"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.0310765922713472E7" miny="-534843.7253108182" maxx="-8371424.955877896" maxy="255077.02807498362"/>
+        <BoundingBox CRS="EPSG:900913" minx="-1.0310765922713472E7" miny="-534843.7253108182" maxx="-8371424.955877896" maxy="255077.02807498362"/>
+        <Style>
+          <Name>patrimonio_areas_naturales</Name>
+          <Title>Patrimonio de Areas Naturales del Estado(PANE)</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_pane"/>
+          </LegendURL>
+        </Style>
+        <MaxScaleDenominator>1.7976931348623157E308</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_psb_beneficiario_comunitario</Name>
+        <Title>Áreas de conservación comunitaria</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>car_psb_beneficiario_comunitario</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.77367346297295</westBoundLongitude>
+          <eastBoundLongitude>-75.19808158112653</eastBoundLongitude>
+          <southBoundLatitude>-4.626677048729471</southBoundLatitude>
+          <northBoundLatitude>1.4037130623348473</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.77367346297295" miny="-4.626677048729471" maxx="-75.19808158112653" maxy="1.4037130623348473"/>
+        <BoundingBox CRS="EPSG:32717" minx="525183.9375" miny="9488598.0" maxx="1144635.625" maxy="1.0155154E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.626677048729471" miny="-80.77367346297295" maxx="1.4037130623348473" maxy="-75.19808158112653"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8991684.199400302" miny="-515599.98205351114" maxx="-8371012.150242048" maxy="156276.257491301"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8991684.199400302" miny="-515599.98205351114" maxx="-8371012.150242048" maxy="156276.257491301"/>
+        <Style>
+          <Name>beneficiario_comunitario3</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_psb_beneficiario_comunitario"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_psb_beneficiario_individual</Name>
+        <Title>car_psb_beneficiario_individual</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>car_psb_beneficiario_individual</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.78115072071559</westBoundLongitude>
+          <eastBoundLongitude>-75.461775806291</eastBoundLongitude>
+          <southBoundLatitude>-4.96923838512731</southBoundLatitude>
+          <northBoundLatitude>1.4097753977338174</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.78115072071559" miny="-4.96923838512731" maxx="-75.461775806291" maxy="1.4097753977338174"/>
+        <BoundingBox CRS="EPSG:32717" minx="524352.0625" miny="9450732.0" maxx="1114936.625" maxy="1.0155824E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.96923838512731" miny="-80.78115072071559" maxx="1.4097753977338174" maxy="-75.461775806291"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8992516.563924743" miny="-553867.8900082778" maxx="-8400366.457112486" maxy="156951.31703949152"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8992516.563924743" miny="-553867.8900082778" maxx="-8400366.457112486" maxy="156951.31703949152"/>
+        <Style>
+          <Name>beneficiario_individual3</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_psb_beneficiario_individual"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_reservas_biosfera</Name>
+        <Title>Reservas de Biosfera</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>car_reservas_biosfera</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-94.88932563743136</westBoundLongitude>
+          <eastBoundLongitude>-76.95371080227112</eastBoundLongitude>
+          <southBoundLatitude>-5.017801912796286</southBoundLatitude>
+          <northBoundLatitude>4.622970643365165</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-94.88932563743136" miny="-5.017801912796286" maxx="-76.95371080227112" maxy="4.622970643365165"/>
+        <BoundingBox CRS="EPSG:32717" minx="-1055174.0" miny="9445277.0" maxx="948914.6875" maxy="1.0511072E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.017801912796286" miny="-94.88932563743136" maxx="4.622970643365165" maxy="-76.95371080227112"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.0563031411675977E7" miny="-559294.5539833171" maxx="-8566447.901161658" maxy="515186.0391131625"/>
+        <BoundingBox CRS="EPSG:900913" minx="-1.0563031411675977E7" miny="-559294.5539833171" maxx="-8566447.901161658" maxy="515186.0391131625"/>
+        <Style>
+          <Name>reservas_biosfera</Name>
+          <Title>Reservas de la Biósfera</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_reservas_biosfera"/>
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>25000.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.7976931348623157E308</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_subsistema_autonomo_descentralizado</Name>
+        <Title>Subsistema Autónomo Descentralizado</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>car_subsistema_autonomo_descentralizado</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-78.69064308653375</westBoundLongitude>
+          <eastBoundLongitude>-78.50364865592996</eastBoundLongitude>
+          <southBoundLatitude>-3.159793719138579</southBoundLatitude>
+          <northBoundLatitude>-3.0111026829238154</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-78.69064308653375" miny="-3.159793719138579" maxx="-78.50364865592996" maxy="-3.0111026829238154"/>
+        <BoundingBox CRS="EPSG:32717" minx="756690.6875" miny="9650459.0" maxx="777449.875" maxy="9666862.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.159793719138579" miny="-78.69064308653375" maxx="-3.0111026829238154" maxy="-78.50364865592996"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8759802.31858817" miny="-351925.0633301128" maxx="-8738986.19379218" maxy="-335348.8188478828"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8759802.31858817" miny="-351925.0633301128" maxx="-8738986.19379218" maxy="-335348.8188478828"/>
+        <Style>
+          <Name>subsistema_autonomo_decentralizado</Name>
+          <Title>Default polygon style</Title>
+          <Abstract>A sample style that just draws out a solid gray interior with a black 1px outline</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_subsistema_autonomo_descentralizado"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:car_zonas_intangibles</Name>
+        <Title>Zonas Intangibles</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>car_zonas_intangibles</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.77095041523974</westBoundLongitude>
+          <eastBoundLongitude>-75.22126084265892</eastBoundLongitude>
+          <southBoundLatitude>-1.7049419023049732</southBoundLatitude>
+          <northBoundLatitude>0.096694277504358</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.77095041523974" miny="-1.7049419023049732" maxx="-75.22126084265892" maxy="0.096694277504358"/>
+        <BoundingBox CRS="EPSG:32717" minx="971017.4375" miny="9811034.0" maxx="1143845.5" maxy="1.0010717E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.7049419023049732" miny="-76.77095041523974" maxx="0.09669427750435795" maxy="-75.22126084265892"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8546103.107940141" miny="-189821.27997569132" maxx="-8373592.4538328005" maxy="10763.962843896103"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8546103.107940141" miny="-189821.27997569132" maxx="-8373592.4538328005" maxy="10763.962843896103"/>
+        <Style>
+          <Name>zonas_intangibles</Name>
+          <Title>Zonas Intangibles</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=car_zonas_intangibles"/>
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>25000.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.7976931348623157E308</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:cuatro_categorias</Name>
+        <Title>cuatro_categorias</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>cuatro_categorias</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.9783325195312</westBoundLongitude>
+          <eastBoundLongitude>-75.439208984375</eastBoundLongitude>
+          <southBoundLatitude>-4.9970440864563</southBoundLatitude>
+          <northBoundLatitude>1.35643815994263</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.9783325195312" miny="-4.9970440864563" maxx="-75.439208984375" maxy="1.35643815994263"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.9970440864563" miny="-80.9783325195312" maxx="1.35643815994263" maxy="-75.439208984375"/>
+        <BoundingBox CRS="EPSG:32717" minx="502401.9452159541" miny="9445046.50596032" maxx="1119748.7735496513" maxy="1.0150640899845596E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9014466.7413626" miny="-556974.9503087862" maxx="-8397854.329987973" maxy="151012.11228612208"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9014466.7413626" miny="-556974.9503087862" maxx="-8397854.329987973" maxy="151012.11228612208"/>
+        <Style>
+          <Name>licencias_cuatro_categorias2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cuatro_categorias"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:cut_1990</Name>
+        <Title>cut_1990</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>cut_1990</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.11404593615782</westBoundLongitude>
+          <eastBoundLongitude>-75.17729173358418</eastBoundLongitude>
+          <southBoundLatitude>-4.427712408091413</southBoundLatitude>
+          <northBoundLatitude>1.4789490919318133</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.11404593615782" miny="-4.427712408091413" maxx="-75.17729173358418" maxy="1.4789490919318133"/>
+        <BoundingBox CRS="EPSG:32717" minx="487347.15625" miny="9510594.0" maxx="1147129.75" maxy="1.0163469E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.427712408091413" miny="-81.11404593615782" maxx="1.4789490919318133" maxy="-75.17729173358418"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9029574.28979529" miny="-493382.0078198294" maxx="-8368697.8349999655" maxy="164654.14531796973"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9029574.28979529" miny="-493382.0078198294" maxx="-8368697.8349999655" maxy="164654.14531796973"/>
+        <Style>
+          <Name>cut2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cut_1990"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:cut_2000</Name>
+        <Title>cut_2000</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>cut_2000</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.99673127729189</westBoundLongitude>
+          <eastBoundLongitude>-75.27399096424728</eastBoundLongitude>
+          <southBoundLatitude>-4.114583977101463</southBoundLatitude>
+          <northBoundLatitude>1.4765725946114803</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.99673127729189" miny="-4.114583977101463" maxx="-75.27399096424728" maxy="1.4765725946114803"/>
+        <BoundingBox CRS="EPSG:32717" minx="500363.71875" miny="9545207.0" maxx="1136603.25" maxy="1.0163206E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.114583977101463" miny="-80.99673127729189" maxx="1.4765725946114803" maxy="-75.27399096424728"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9016514.881707748" miny="-458427.58977358625" maxx="-8379462.344117482" maxy="164389.50683030978"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9016514.881707748" miny="-458427.58977358625" maxx="-8379462.344117482" maxy="164389.50683030978"/>
+        <Style>
+          <Name>cut2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cut_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:cut_2008</Name>
+        <Title>cut_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>cut_2008</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.09038900597693</westBoundLongitude>
+          <eastBoundLongitude>-75.17830869211654</eastBoundLongitude>
+          <southBoundLatitude>-4.310152833943534</southBoundLatitude>
+          <northBoundLatitude>1.4770050248256954</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.09038900597693" miny="-4.310152833943534" maxx="-75.17830869211654" maxy="1.4770050248256954"/>
+        <BoundingBox CRS="EPSG:32717" minx="489970.21875" miny="9523589.0" maxx="1147116.75" maxy="1.0163254E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.310152833943534" miny="-81.09038900597693" maxx="1.4770050248256954" maxy="-75.17830869211654"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9026940.81237382" miny="-480257.1955497701" maxx="-8368811.042305947" maxy="164437.6607359973"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9026940.81237382" miny="-480257.1955497701" maxx="-8368811.042305947" maxy="164437.6607359973"/>
+        <Style>
+          <Name>cut2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cut_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:cut_2014</Name>
+        <Title>cut_2014</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>cut_2014</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.00171847787394</westBoundLongitude>
+          <eastBoundLongitude>-75.14283551134557</eastBoundLongitude>
+          <southBoundLatitude>-4.305553389347445</southBoundLatitude>
+          <northBoundLatitude>1.483258516402839</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.00171847787394" miny="-4.305553389347445" maxx="-75.14283551134557" maxy="1.483258516402839"/>
+        <BoundingBox CRS="EPSG:32717" minx="499809.3125" miny="9524098.0" maxx="1151077.625" maxy="1.0163945E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.305553389347445" miny="-81.00171847787394" maxx="1.483258516402839" maxy="-75.14283551134557"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9017070.054337025" miny="-479743.7371208342" maxx="-8364862.185885702" maxy="165134.0285829917"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9017070.054337025" miny="-479743.7371208342" maxx="-8364862.185885702" maxy="165134.0285829917"/>
+        <Style>
+          <Name>cut2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cut_2014"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:deforestacion1990_2000</Name>
+        <Title>deforestacion1990_2000</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>deforestacion1990_2000</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.93175174591137</westBoundLongitude>
+          <eastBoundLongitude>-75.69223099787865</eastBoundLongitude>
+          <southBoundLatitude>-5.046809944655838</southBoundLatitude>
+          <northBoundLatitude>1.4675785784833277</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.93175174591137" miny="-5.046809944655838" maxx="-75.69223099787865" maxy="1.4675785784833277"/>
+        <BoundingBox CRS="EPSG:32717" minx="507594.15625" miny="9442161.0" maxx="1089202.75" maxy="1.0162212E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.046809944655838" miny="-80.93175174591137" maxx="1.4675785784833277" maxy="-75.69223099787865"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9009281.393362483" miny="-562536.2086442672" maxx="-8426020.611690689" maxy="163387.9669896922"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9009281.393362483" miny="-562536.2086442672" maxx="-8426020.611690689" maxy="163387.9669896922"/>
+        <Style>
+          <Name>deforestacion1990_2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=deforestacion1990_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:deforestacion2000_2008</Name>
+        <Title>deforestacion2000_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>deforestacion2000_2008</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.92842481965793</westBoundLongitude>
+          <eastBoundLongitude>-75.21769710897378</eastBoundLongitude>
+          <southBoundLatitude>-5.048501298609812</southBoundLatitude>
+          <northBoundLatitude>1.4784985003722926</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.92842481965793" miny="-5.048501298609812" maxx="-75.21769710897378" maxy="1.4784985003722926"/>
+        <BoundingBox CRS="EPSG:32717" minx="507964.34375" miny="9441974.0" maxx="1142052.5" maxy="1.0163419E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.048501298609812" miny="-80.92842481965793" maxx="1.4784985003722926" maxy="-75.21769710897378"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9008911.041626044" miny="-562725.2223263356" maxx="-8373195.740813647" maxy="164603.96898511556"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9008911.041626044" miny="-562725.2223263356" maxx="-8373195.740813647" maxy="164603.96898511556"/>
+        <Style>
+          <Name>deforestacion_nacional_200_2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=deforestacion2000_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:deforestacion2008_2014</Name>
+        <Title>deforestacion2008_2014</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>deforestacion2008_2014</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.08757031498423</westBoundLongitude>
+          <eastBoundLongitude>-75.26534933631925</eastBoundLongitude>
+          <southBoundLatitude>-5.047992759159108</southBoundLatitude>
+          <northBoundLatitude>1.4874908953060406</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.08757031498423" miny="-5.047992759159108" maxx="-75.26534933631925" maxy="1.4874908953060406"/>
+        <BoundingBox CRS="EPSG:32717" minx="490293.15625" miny="9442030.0" maxx="1136743.75" maxy="1.0164413E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.047992759159108" miny="-81.08757031498423" maxx="1.4874908953060406" maxy="-75.26534933631925"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9026627.03712781" miny="-562668.3915243228" maxx="-8378500.362496908" maxy="165605.333217905"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9026627.03712781" miny="-562668.3915243228" maxx="-8378500.362496908" maxy="165605.333217905"/>
+        <Style>
+          <Name>deforestacion_nacional_200_2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=deforestacion2008_2014"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:deforestacion_3_parroquias</Name>
+        <Title>deforestacion_3_parroquias</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>deforestacion_3_parroquias</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.1971282958984</westBoundLongitude>
+          <eastBoundLongitude>-78.6183166503906</eastBoundLongitude>
+          <southBoundLatitude>-0.475985616445541</southBoundLatitude>
+          <northBoundLatitude>1.12057483196259</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.1971282958984" miny="-0.475985616445541" maxx="-78.6183166503906" maxy="1.12057483196259"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.475985616445541" miny="-80.1971282958984" maxx="1.12057483196259" maxy="-78.6183166503906"/>
+        <BoundingBox CRS="EPSG:32717" minx="589325.4884602805" miny="9947343.484646901" maxx="765098.4703282937" maxy="1.0123965126207251E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8927503.484982241" miny="-52987.08593355969" maxx="-8751750.976545822" maxy="124749.77283336647"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8927503.484982241" miny="-52987.08593355969" maxx="-8751750.976545822" maxy="124749.77283336647"/>
+        <Style>
+          <Name>deforestacion_3_parroquias</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=deforestacion_3_parroquias"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:deforestacion_nacional_2000_2008</Name>
+        <Title>deforestacion_nacional_2000_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>deforestacion_nacional_2000_2008</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.9300537109375</westBoundLongitude>
+          <eastBoundLongitude>-75.1696014404297</eastBoundLongitude>
+          <southBoundLatitude>-5.04699277877808</southBoundLatitude>
+          <northBoundLatitude>1.45264256000519</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.9300537109375" miny="-5.04699277877808" maxx="-75.1696014404297" maxy="1.45264256000519"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.04699277877808" miny="-80.9300537109375" maxx="1.45264256000519" maxy="-75.1696014404297"/>
+        <BoundingBox CRS="EPSG:32717" minx="507753.29680806014" miny="9439235.852344183" maxx="1149894.0675217162" maxy="1.0161401211378355E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9009092.368973842" miny="-562556.640860948" maxx="-8367841.7554819565" maxy="161724.75698111375"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9009092.368973842" miny="-562556.640860948" maxx="-8367841.7554819565" maxy="161724.75698111375"/>
+        <Style>
+          <Name>deforestacion_nacional_200_2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=deforestacion_nacional_2000_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:derrames_petroleros_infopriv</Name>
+        <Title>derrames_petroleros_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>derrames_petroleros_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.99609805637088</westBoundLongitude>
+          <eastBoundLongitude>-75.53454917020407</eastBoundLongitude>
+          <southBoundLatitude>-2.391245351442448</southBoundLatitude>
+          <northBoundLatitude>0.9986052788842475</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.99609805637088" miny="-2.391245351442448" maxx="-75.53454917020407" maxy="0.9986052788842475"/>
+        <BoundingBox CRS="EPSG:32717" minx="500434.1875" miny="9735694.0" maxx="1108573.25" maxy="1.0110376E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-2.391245351442448" miny="-80.99609805637088" maxx="0.9986052788842475" maxy="-75.53454917020407"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9016444.391877262" miny="-266269.52499277494" maxx="-8408467.550926602" maxy="111169.85960455758"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9016444.391877262" miny="-266269.52499277494" maxx="-8408467.550926602" maxy="111169.85960455758"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=derrames_petroleros_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:derrames_petroleros_infopublic</Name>
+        <Title>derrames_petroleros_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>derrames_petroleros_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.99609805637088</westBoundLongitude>
+          <eastBoundLongitude>-75.53454917020407</eastBoundLongitude>
+          <southBoundLatitude>-2.391245351442448</southBoundLatitude>
+          <northBoundLatitude>0.9986052788842475</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.99609805637088" miny="-2.391245351442448" maxx="-75.53454917020407" maxy="0.9986052788842475"/>
+        <BoundingBox CRS="EPSG:32717" minx="500434.1875" miny="9735694.0" maxx="1108573.25" maxy="1.0110376E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-2.391245351442448" miny="-80.99609805637088" maxx="0.9986052788842475" maxy="-75.53454917020407"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9016444.391877262" miny="-266269.52499277494" maxx="-8408467.550926602" maxy="111169.85960455758"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9016444.391877262" miny="-266269.52499277494" maxx="-8408467.550926602" maxy="111169.85960455758"/>
+        <Style>
+          <Name>derrames_petroleros</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=derrames_petroleros_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:disposicion_residuos_mancomunidades</Name>
+        <Title>disposicion_residuos_mancomunidades</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>disposicion_residuos_mancomunidades</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.3562229765263</westBoundLongitude>
+          <eastBoundLongitude>-77.72923175819</eastBoundLongitude>
+          <southBoundLatitude>-3.79807593351162</southBoundLatitude>
+          <northBoundLatitude>0.77058737231098</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.3562229765263" miny="-3.79807593351162" maxx="-77.72923175819" maxy="0.77058737231098"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.79807593351162" miny="-80.3562229765263" maxx="0.77058737231098" maxy="-77.72923175819"/>
+        <BoundingBox CRS="EPSG:32717" minx="571481.4800088209" miny="9579504.759098694" maxx="864153.7812468135" maxy="1.0085312999999916E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8945213.823817655" miny="-423109.8656187736" maxx="-8652778.499074059" maxy="85783.98008483149"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8945213.823817655" miny="-423109.8656187736" maxx="-8652778.499074059" maxy="85783.98008483149"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=disposicion_residuos_mancomunidades"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:ecosistemas</Name>
+        <Title>ecosistemas</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>ecosistemas</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.03985646498708</westBoundLongitude>
+          <eastBoundLongitude>-75.15697774470603</eastBoundLongitude>
+          <southBoundLatitude>-3.878477769597383</southBoundLatitude>
+          <northBoundLatitude>1.4821362982616915</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.03985646498708" miny="-3.878477769597383" maxx="-75.15697774470603" maxy="1.4821362982616915"/>
+        <BoundingBox CRS="EPSG:32717" minx="495575.0625" miny="9571305.0" maxx="1149843.0" maxy="1.0163821E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.878477769597383" miny="-81.03985646498708" maxx="1.4821362982616915" maxy="-75.15697774470603"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9021315.55564234" miny="-432080.278709381" maxx="-8366436.492102069" maxy="165009.06199020433"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9021315.55564234" miny="-432080.278709381" maxx="-8366436.492102069" maxy="165009.06199020433"/>
+        <Style>
+          <Name>ecosistemas</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ecosistemas"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:ecotalleres_2</Name>
+        <Title>ecotalleres_2</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>ecotalleres_2</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.8941268920898</westBoundLongitude>
+          <eastBoundLongitude>-76.4961242675781</eastBoundLongitude>
+          <southBoundLatitude>-4.14931488037109</southBoundLatitude>
+          <northBoundLatitude>0.921360373497009</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.8941268920898" miny="-4.14931488037109" maxx="-76.4961242675781" maxy="0.921360373497009"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.14931488037109" miny="-80.8941268920898" maxx="0.921360373497009" maxy="-76.4961242675781"/>
+        <BoundingBox CRS="EPSG:32717" minx="511750.3591985909" miny="9539942.760575341" maxx="1001688.5858430484" maxy="1.0102155621312078E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9005093.013793895" miny="-462303.89174216066" maxx="-8515509.601125771" maxy="102569.78831803633"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9005093.013793895" miny="-462303.89174216066" maxx="-8515509.601125771" maxy="102569.78831803633"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ecotalleres_2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:empresas_punto_verde</Name>
+        <Title>empresas_punto_verde</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>empresas_punto_verde</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.7532487491341</westBoundLongitude>
+          <eastBoundLongitude>-78.1453449111399</eastBoundLongitude>
+          <southBoundLatitude>-2.90056943653699</southBoundLatitude>
+          <northBoundLatitude>0.0483452325124499</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.7532487491341" miny="-2.90056943653699" maxx="-78.1453449111399" maxy="0.0483452325124499"/>
+        <BoundingBox CRS="EPSG:4326" minx="-2.90056943653699" miny="-80.7532487491341" maxx="0.0483452325124499" maxy="-78.1453449111399"/>
+        <BoundingBox CRS="EPSG:32717" minx="527422.3795282189" miny="9678996.838801382" maxx="817783.9158084373" maxy="1.0005350284812827E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8989410.530656165" miny="-323027.92024345335" maxx="-8699100.003372826" maxy="5381.767304177776"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8989410.530656165" miny="-323027.92024345335" maxx="-8699100.003372826" maxy="5381.767304177776"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=empresas_punto_verde"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:estaciones_petroleras_infopriv</Name>
+        <Title>estaciones_petroleras_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>estaciones_petroleras_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.97747724098379</westBoundLongitude>
+          <eastBoundLongitude>-76.09774068745904</eastBoundLongitude>
+          <southBoundLatitude>-3.2795245452820008</southBoundLatitude>
+          <northBoundLatitude>1.0031107516015987</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.97747724098379" miny="-3.2795245452820008" maxx="-76.09774068745904" maxy="1.0031107516015987"/>
+        <BoundingBox CRS="EPSG:32717" minx="502506.1875" miny="9637510.0" maxx="1045283.6875" maxy="1.0110874E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.2795245452820008" miny="-80.97747724098379" maxx="1.0031107516015987" maxy="-76.09774068745904"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9014371.532190215" miny="-365274.5117776499" maxx="-8471161.743846515" maxy="111671.48306420367"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9014371.532190215" miny="-365274.5117776499" maxx="-8471161.743846515" maxy="111671.48306420367"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=estaciones_petroleras_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:estaciones_petroleras_infopublic</Name>
+        <Title>estaciones_petroleras_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>estaciones_petroleras_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.97747724098379</westBoundLongitude>
+          <eastBoundLongitude>-76.09774068745904</eastBoundLongitude>
+          <southBoundLatitude>-3.2795245452820008</southBoundLatitude>
+          <northBoundLatitude>1.0031107516015987</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.97747724098379" miny="-3.2795245452820008" maxx="-76.09774068745904" maxy="1.0031107516015987"/>
+        <BoundingBox CRS="EPSG:32717" minx="502506.1875" miny="9637510.0" maxx="1045283.6875" maxy="1.0110874E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.2795245452820008" miny="-80.97747724098379" maxx="1.0031107516015987" maxy="-76.09774068745904"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9014371.532190215" miny="-365274.5117776499" maxx="-8471161.743846515" maxy="111671.48306420367"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9014371.532190215" miny="-365274.5117776499" maxx="-8471161.743846515" maxy="111671.48306420367"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://geonetwork.ambiente.gob.ec/metadatos/srv/spa/main.home"/>
+        </MetadataURL>
+        <Style>
+          <Name>estaciones_petroleras</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=estaciones_petroleras_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:fenologia</Name>
+        <Title>fenologia</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>fenologia</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.00345051730324</westBoundLongitude>
+          <eastBoundLongitude>-75.15252842907121</eastBoundLongitude>
+          <southBoundLatitude>-5.008338291063831</southBoundLatitude>
+          <northBoundLatitude>1.4514302744418903</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.00345051730324" miny="-5.008338291063831" maxx="-75.15252842907121" maxy="1.4514302744418903"/>
+        <BoundingBox CRS="EPSG:32717" minx="499617.5" miny="9446414.0" maxx="1149353.75" maxy="1.0160427E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.008338291063831" miny="-81.00345051730324" maxx="1.4514302744418903" maxy="-75.15252842907121"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9017262.86408433" miny="-558237.0231528323" maxx="-8365941.196551222" maxy="161589.76262120207"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9017262.86408433" miny="-558237.0231528323" maxx="-8365941.196551222" maxy="161589.76262120207"/>
+        <Style>
+          <Name>FENOLOGIA</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=fenologia"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:fosas_eliminadas_autorizadas_mae_infopriv</Name>
+        <Title>fosas_eliminadas_autorizadas_mae_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>fosas_eliminadas_autorizadas_mae_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.88944401908756</westBoundLongitude>
+          <eastBoundLongitude>-76.26549281345243</eastBoundLongitude>
+          <southBoundLatitude>-0.6267354501823656</southBoundLatitude>
+          <northBoundLatitude>0.1286354533175276</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.88944401908756" miny="-0.6267354501823656" maxx="-76.26549281345243" maxy="0.1286354533175276"/>
+        <BoundingBox CRS="EPSG:32717" minx="957797.5" miny="9930547.0" maxx="1027405.3125" maxy="1.0014255E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.6267354501823656" miny="-76.88944401908756" maxx="0.1286354533175276" maxy="-76.26549281345243"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8559293.755582742" miny="-69769.26253945417" maxx="-8489835.825091587" maxy="14319.64519103716"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8559293.755582742" miny="-69769.26253945417" maxx="-8489835.825091587" maxy="14319.64519103716"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=fosas_eliminadas_autorizadas_mae_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:fosas_eliminadas_autorizadas_mae_infopublic</Name>
+        <Title>fosas_eliminadas_autorizadas_mae_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>fosas_eliminadas_autorizadas_mae_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.88944401908756</westBoundLongitude>
+          <eastBoundLongitude>-76.26549281345243</eastBoundLongitude>
+          <southBoundLatitude>-0.6267354501823656</southBoundLatitude>
+          <northBoundLatitude>0.1286354533175276</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.88944401908756" miny="-0.6267354501823656" maxx="-76.26549281345243" maxy="0.1286354533175276"/>
+        <BoundingBox CRS="EPSG:32717" minx="957797.5" miny="9930547.0" maxx="1027405.3125" maxy="1.0014255E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.6267354501823656" miny="-76.88944401908756" maxx="0.1286354533175276" maxy="-76.26549281345243"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8559293.755582742" miny="-69769.26253945417" maxx="-8489835.825091587" maxy="14319.64519103716"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8559293.755582742" miny="-69769.26253945417" maxx="-8489835.825091587" maxy="14319.64519103716"/>
+        <Style>
+          <Name>fosas_eliminadas</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=fosas_eliminadas_autorizadas_mae_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:fosas_eliminadas_infopriv</Name>
+        <Title>fosas_eliminadas_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>fosas_eliminadas_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.94388652098992</westBoundLongitude>
+          <eastBoundLongitude>-76.25232969634673</eastBoundLongitude>
+          <southBoundLatitude>-1.0045699043192322</southBoundLatitude>
+          <northBoundLatitude>0.2193765464344088</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.94388652098992" miny="-1.0045699043192322" maxx="-76.25232969634673" maxy="0.2193765464344088"/>
+        <BoundingBox CRS="EPSG:32717" minx="951723.875" miny="9888684.0" maxx="1028825.5625" maxy="1.0024309E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.0045699043192322" miny="-76.94388652098992" maxx="0.21937654643440876" maxy="-76.25232969634673"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8565354.267172024" miny="-111833.94013512718" maxx="-8488370.513598131" maxy="24420.945109805118"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8565354.267172024" miny="-111833.94013512718" maxx="-8488370.513598131" maxy="24420.945109805118"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=fosas_eliminadas_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:fosas_petroleras_infopublic</Name>
+        <Title>fosas_petroleras_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>fosas_petroleras_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.94388652098992</westBoundLongitude>
+          <eastBoundLongitude>-76.25232969634673</eastBoundLongitude>
+          <southBoundLatitude>-1.0045699043192322</southBoundLatitude>
+          <northBoundLatitude>0.2193765464344088</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.94388652098992" miny="-1.0045699043192322" maxx="-76.25232969634673" maxy="0.2193765464344088"/>
+        <BoundingBox CRS="EPSG:32717" minx="951723.875" miny="9888684.0" maxx="1028825.5625" maxy="1.0024309E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.0045699043192322" miny="-76.94388652098992" maxx="0.21937654643440876" maxy="-76.25232969634673"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8565354.267172024" miny="-111833.94013512718" maxx="-8488370.513598131" maxy="24420.945109805118"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8565354.267172024" miny="-111833.94013512718" maxx="-8488370.513598131" maxy="24420.945109805118"/>
+        <Style>
+          <Name>fosas_petroleras</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=fosas_petroleras_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:indice_ombrotermico</Name>
+        <Title>indice_ombrotermico</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>indice_ombrotermico</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.00345052086055</westBoundLongitude>
+          <eastBoundLongitude>-75.15251571235069</eastBoundLongitude>
+          <southBoundLatitude>-5.009016787653455</southBoundLatitude>
+          <northBoundLatitude>1.4507698247963288</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.00345052086055" miny="-5.009016787653455" maxx="-75.15251571235069" maxy="1.4507698247963288"/>
+        <BoundingBox CRS="EPSG:32717" minx="499617.5" miny="9446339.0" maxx="1149354.5" maxy="1.0160354E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.009016787653455" miny="-81.00345052086055" maxx="1.4507698247963288" maxy="-75.15251571235069"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9017262.864480328" miny="-558312.8425651231" maxx="-8365939.780932371" maxy="161516.2181173889"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9017262.864480328" miny="-558312.8425651231" maxx="-8365939.780932371" maxy="161516.2181173889"/>
+        <Style>
+          <Name>INDICE_OMBROTERMICOBDD</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=indice_ombrotermico"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:indice_termicidad</Name>
+        <Title>indice_termicidad</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>indice_termicidad</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.04722511213946</westBoundLongitude>
+          <eastBoundLongitude>-75.13438019021159</eastBoundLongitude>
+          <southBoundLatitude>-5.060653147789146</southBoundLatitude>
+          <northBoundLatitude>1.4734146054843125</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.04722511213946" miny="-5.060653147789146" maxx="-75.13438019021159" maxy="1.4734146054843125"/>
+        <BoundingBox CRS="EPSG:32717" minx="494765.375" miny="9440631.0" maxx="1151324.375" maxy="1.0162857E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.060653147789146" miny="-81.04722511213946" maxx="1.4734146054843125" maxy="-75.13438019021159"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9022135.82969118" miny="-564083.2410198702" maxx="-8363920.943842574" maxy="164037.8445670036"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9022135.82969118" miny="-564083.2410198702" maxx="-8363920.943842574" maxy="164037.8445670036"/>
+        <Style>
+          <Name>indice_termicidad</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=indice_termicidad"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:licenciamiento_por_catalogo</Name>
+        <Title>licenciamiento_por_catalogo</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>licenciamiento_por_catalogo</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.9783325195312</westBoundLongitude>
+          <eastBoundLongitude>-75.439208984375</eastBoundLongitude>
+          <southBoundLatitude>-4.94970417022705</southBoundLatitude>
+          <northBoundLatitude>1.35643815994263</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.9783325195312" miny="-4.94970417022705" maxx="-75.439208984375" maxy="1.35643815994263"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.94970417022705" miny="-80.9783325195312" maxx="1.35643815994263" maxy="-75.439208984375"/>
+        <BoundingBox CRS="EPSG:32717" minx="502402.11677334283" miny="9450303.917481927" maxx="1119748.3246531845" maxy="1.0150640899845596E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9014466.7413626" miny="-551685.1792896899" maxx="-8397854.329987973" maxy="151012.11228612208"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9014466.7413626" miny="-551685.1792896899" maxx="-8397854.329987973" maxy="151012.11228612208"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=licenciamiento_por_catalogo"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>licencias4categorias</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=licenciamiento_por_catalogo&amp;style=licencias4categorias"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:mancomunidades</Name>
+        <Title>mancomunidades</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>mancomunidades</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0113525390625</westBoundLongitude>
+          <eastBoundLongitude>-77.8109970092773</eastBoundLongitude>
+          <southBoundLatitude>-4.74801158905029</southBoundLatitude>
+          <northBoundLatitude>0.875991821289062</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0113525390625" miny="-4.74801158905029" maxx="-77.8109970092773" maxy="0.875991821289062"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.74801158905029" miny="-81.0113525390625" maxx="0.875991821289062" maxy="-77.8109970092773"/>
+        <BoundingBox CRS="EPSG:32717" minx="498736.74734672066" miny="9474374.320361214" maxx="855040.5837218305" maxy="1.0096974650577838E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9018142.513122806" miny="-529152.2098049286" maxx="-8661880.565189682" maxy="97518.76275559944"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9018142.513122806" miny="-529152.2098049286" maxx="-8661880.565189682" maxy="97518.76275559944"/>
+        <Style>
+          <Name>Mancomunidades2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=mancomunidades"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:manejo_forestal2</Name>
+        <Title>manejo_forestal2</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>manejo_forestal2</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.7392044067383</westBoundLongitude>
+          <eastBoundLongitude>-76.037712097168</eastBoundLongitude>
+          <southBoundLatitude>-4.42471742630005</southBoundLatitude>
+          <northBoundLatitude>1.35738515853882</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.7392044067383" miny="-4.42471742630005" maxx="-76.037712097168" maxy="1.35738515853882"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.42471742630005" miny="-80.7392044067383" maxx="1.35738515853882" maxy="-76.037712097168"/>
+        <BoundingBox CRS="EPSG:32717" minx="528934.2034750995" miny="9509080.9344983" maxx="1052861.6603109331" maxy="1.0150600196878638E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8987847.121612137" miny="-493047.6106476921" maxx="-8464479.39174228" maxy="151117.56125753908"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8987847.121612137" miny="-493047.6106476921" maxx="-8464479.39174228" maxy="151117.56125753908"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=manejo_forestal2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:marino_costero_7-2</Name>
+        <Title>marino_costero_7-2</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>marino_costero_7-2</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0945281982422</westBoundLongitude>
+          <eastBoundLongitude>-78.88671875</eastBoundLongitude>
+          <southBoundLatitude>-3.68520617485046</southBoundLatitude>
+          <northBoundLatitude>1.12445747852325</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0945281982422" miny="-3.68520617485046" maxx="-78.88671875" maxy="1.12445747852325"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.68520617485046" miny="-81.0945281982422" maxx="1.12445747852325" maxy="-78.88671875"/>
+        <BoundingBox CRS="EPSG:32717" minx="489481.53930126666" miny="9592390.029585576" maxx="735205.2762063807" maxy="1.0124371634101566E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9027401.585149087" miny="-410518.420269139" maxx="-8781629.361602187" maxy="125182.070033371"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9027401.585149087" miny="-410518.420269139" maxx="-8781629.361602187" maxy="125182.070033371"/>
+        <Style>
+          <Name>marino_costero</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=marino_costero_7-2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:mecheros_petroleros_infopriv</Name>
+        <Title>mecheros_petroleros_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>mecheros_petroleros_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.76177942486713</westBoundLongitude>
+          <eastBoundLongitude>-76.21670224312402</eastBoundLongitude>
+          <southBoundLatitude>-1.3982786744558817</southBoundLatitude>
+          <northBoundLatitude>0.3079542088529481</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.76177942486713" miny="-1.3982786744558817" maxx="-76.21670224312402" maxy="0.3079542088529481"/>
+        <BoundingBox CRS="EPSG:32717" minx="860526.125" miny="9845199.0" maxx="1032727.0625" maxy="1.0034093E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.3982786744558817" miny="-77.76177942486713" maxx="0.3079542088529481" maxy="-76.21670224312402"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8656401.688755067" miny="-155671.1233038079" maxx="-8484404.483647117" maxy="34281.47077503551"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8656401.688755067" miny="-155671.1233038079" maxx="-8484404.483647117" maxy="34281.47077503551"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=mecheros_petroleros_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:mecheros_petroleros_infopublic</Name>
+        <Title>mecheros_petroleros_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>mecheros_petroleros_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.76177942486713</westBoundLongitude>
+          <eastBoundLongitude>-76.21670224312402</eastBoundLongitude>
+          <southBoundLatitude>-1.3982786744558817</southBoundLatitude>
+          <northBoundLatitude>0.3079542088529481</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.76177942486713" miny="-1.3982786744558817" maxx="-76.21670224312402" maxy="0.3079542088529481"/>
+        <BoundingBox CRS="EPSG:32717" minx="860526.125" miny="9845199.0" maxx="1032727.0625" maxy="1.0034093E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.3982786744558817" miny="-77.76177942486713" maxx="0.3079542088529481" maxy="-76.21670224312402"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8656401.688755067" miny="-155671.1233038079" maxx="-8484404.483647117" maxy="34281.47077503551"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8656401.688755067" miny="-155671.1233038079" maxx="-8484404.483647117" maxy="34281.47077503551"/>
+        <Style>
+          <Name>mecheros_petroleros</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=mecheros_petroleros_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:muestreo_calidad_agua</Name>
+        <Title>muestreo_calidad_agua</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>muestreo_calidad_agua</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0024795532227</westBoundLongitude>
+          <eastBoundLongitude>-76.2572250366211</eastBoundLongitude>
+          <southBoundLatitude>-5.04601430892944</southBoundLatitude>
+          <northBoundLatitude>1.09963715076447</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0024795532227" miny="-5.04601430892944" maxx="-76.2572250366211" maxy="1.09963715076447"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.04601430892944" miny="-81.0024795532227" maxx="1.09963715076447" maxy="-76.2572250366211"/>
+        <BoundingBox CRS="EPSG:32717" minx="499724.08804388175" miny="9440330.0431882" maxx="1028359.464553469" maxy="1.0121963421264831E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9017154.776857305" miny="-562447.2942277284" maxx="-8488915.460384732" maxy="122418.56326739475"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9017154.776857305" miny="-562447.2942277284" maxx="-8488915.460384732" maxy="122418.56326739475"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=muestreo_calidad_agua"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:pasivos_mineros_puyango_infopriv</Name>
+        <Title>pasivos_mineros_puyango_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>pasivos_mineros_puyango_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.01089108580099</westBoundLongitude>
+          <eastBoundLongitude>-79.44348872747733</eastBoundLongitude>
+          <southBoundLatitude>-3.9000869749350517</southBoundLatitude>
+          <northBoundLatitude>-3.552694750823518</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.01089108580099" miny="-3.9000869749350517" maxx="-79.44348872747733" maxy="-3.552694750823518"/>
+        <BoundingBox CRS="EPSG:32717" minx="609858.3125" miny="9568852.0" maxx="672823.6875" maxy="9607170.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.9000869749350517" miny="-80.01089108580099" maxx="-3.552694750823518" maxy="-79.44348872747733"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8906771.653587438" miny="-434491.3572103434" maxx="-8843608.711983945" maxy="-395737.8388395901"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8906771.653587438" miny="-434491.3572103434" maxx="-8843608.711983945" maxy="-395737.8388395901"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=pasivos_mineros_puyango_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:pasivos_mineros_puyango_infopublic</Name>
+        <Title>pasivos_mineros_puyango_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>pasivos_mineros_puyango_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.01089108580099</westBoundLongitude>
+          <eastBoundLongitude>-79.44348872747733</eastBoundLongitude>
+          <southBoundLatitude>-3.9000869749350517</southBoundLatitude>
+          <northBoundLatitude>-3.552694750823518</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.01089108580099" miny="-3.9000869749350517" maxx="-79.44348872747733" maxy="-3.552694750823518"/>
+        <BoundingBox CRS="EPSG:32717" minx="609858.3125" miny="9568852.0" maxx="672823.6875" maxy="9607170.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.9000869749350517" miny="-80.01089108580099" maxx="-3.552694750823518" maxy="-79.44348872747733"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8906771.653587438" miny="-434491.3572103434" maxx="-8843608.711983945" maxy="-395737.8388395901"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8906771.653587438" miny="-434491.3572103434" maxx="-8843608.711983945" maxy="-395737.8388395901"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=pasivos_mineros_puyango_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_Eestatales_amazonia_infopublic</Name>
+        <Title>piscinas_Eestatales_amazonia_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_Eestatales_amazonia_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.42808314025393</westBoundLongitude>
+          <eastBoundLongitude>-76.08200018178015</eastBoundLongitude>
+          <southBoundLatitude>-1.0457549921062155</southBoundLatitude>
+          <northBoundLatitude>0.3419516512308869</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.42808314025393" miny="-1.0457549921062155" maxx="-76.08200018178015" maxy="0.3419516512308869"/>
+        <BoundingBox CRS="EPSG:32717" minx="897723.625" miny="9884186.0" maxx="1047837.25" maxy="1.003787E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.0457549921062155" miny="-77.42808314025393" maxx="0.3419516512308869" maxy="-76.08200018178015"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8619254.788272317" miny="-116419.37720624173" maxx="-8469409.518769512" maxy="38066.10967233247"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8619254.788272317" miny="-116419.37720624173" maxx="-8469409.518769512" maxy="38066.10967233247"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_Eestatales_amazonia_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_economia_mixta_amazonia_infopriv</Name>
+        <Title>piscinas_economia_mixta_amazonia_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>piscinas_economia_mixta_amazonia_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.90381878637159</westBoundLongitude>
+          <eastBoundLongitude>-76.81921887504949</eastBoundLongitude>
+          <southBoundLatitude>-0.4120739940842867</southBoundLatitude>
+          <northBoundLatitude>-0.1826180567808617</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.90381878637159" miny="-0.4120739940842867" maxx="-76.81921887504949" maxy="-0.1826180567808617"/>
+        <BoundingBox CRS="EPSG:32717" minx="956191.5" miny="9954336.0" maxx="965620.4375" maxy="9979761.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.4120739940842867" miny="-76.90381878637159" maxx="-0.1826180567808617" maxy="-76.81921887504949"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8560893.94735707" miny="-45872.262653684185" maxx="-8551476.32830754" maxy="-20328.98351019291"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8560893.94735707" miny="-45872.262653684185" maxx="-8551476.32830754" maxy="-20328.98351019291"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_economia_mixta_amazonia_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_eliminadas_autorizadas_mae_infopriv</Name>
+        <Title>piscinas_eliminadas_autorizadas_mae_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>piscinas_eliminadas_autorizadas_mae_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.36631724566702</westBoundLongitude>
+          <eastBoundLongitude>-76.261709154078</eastBoundLongitude>
+          <southBoundLatitude>-1.0456835251771062</southBoundLatitude>
+          <northBoundLatitude>0.3419282844685702</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.36631724566702" miny="-1.0456835251771062" maxx="-76.261709154078" maxy="0.3419282844685702"/>
+        <BoundingBox CRS="EPSG:32717" minx="904610.3125" miny="9884186.0" maxx="1027771.75" maxy="1.003787E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.0456835251771062" miny="-77.36631724566702" maxx="0.3419282844685702" maxy="-76.261709154078"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8612379.040338513" miny="-116411.42021885441" maxx="-8489414.630056694" maxy="38063.50844992671"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8612379.040338513" miny="-116411.42021885441" maxx="-8489414.630056694" maxy="38063.50844992671"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_eliminadas_autorizadas_mae_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_eliminadas_autorizadas_mae_infopublic</Name>
+        <Title>piscinas_eliminadas_autorizadas_mae_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_eliminadas_autorizadas_mae_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.36591238484837</westBoundLongitude>
+          <eastBoundLongitude>-76.26177022670758</eastBoundLongitude>
+          <southBoundLatitude>-1.0052694100535378</southBoundLatitude>
+          <northBoundLatitude>0.3417294919449099</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.36591238484837" miny="-1.0052694100535378" maxx="-76.26177022670758" maxy="0.3417294919449099"/>
+        <BoundingBox CRS="EPSG:32717" minx="904655.5" miny="9888662.0" maxx="1027771.5625" maxy="1.0037848E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.0052694100535378" miny="-77.36591238484837" maxx="0.34172949194490987" maxy="-76.26177022670758"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8612333.971438337" miny="-111911.82073586567" maxx="-8489421.428630719" maxy="38041.37857357928"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8612333.971438337" miny="-111911.82073586567" maxx="-8489421.428630719" maxy="38041.37857357928"/>
+        <Style>
+          <Name>piscinas_eliminadas</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_eliminadas_autorizadas_mae_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_enonomia_mixta_amazonia_infopublic</Name>
+        <Title>piscinas_enonomia_mixta_amazonia_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>piscinas_enonomia_mixta_amazonia_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.90278577020514</westBoundLongitude>
+          <eastBoundLongitude>-76.82650698638597</eastBoundLongitude>
+          <southBoundLatitude>-0.4109290731721154</southBoundLatitude>
+          <northBoundLatitude>-0.1952583069508868</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.90278577020514" miny="-0.4109290731721154" maxx="-76.82650698638597" maxy="-0.1952583069508868"/>
+        <BoundingBox CRS="EPSG:32717" minx="956306.413801" miny="9954462.81549" maxx="964807.365889" maxy="9978360.32202"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.41092907317211536" miny="-76.90278577020514" maxx="-0.19525830695088675" maxy="-76.82650698638597"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8560778.952523442" miny="-45744.807353558856" maxx="-8552287.63715036" maxy="-21736.09737602922"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8560778.952523442" miny="-45744.807353558856" maxx="-8552287.63715036" maxy="-21736.09737602922"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_enonomia_mixta_amazonia_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_estatales_amazonia_infopriv</Name>
+        <Title>piscinas_estatales_amazonia_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_estatales_amazonia_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.42808314025393</westBoundLongitude>
+          <eastBoundLongitude>-76.08200018178015</eastBoundLongitude>
+          <southBoundLatitude>-1.0457549921062155</southBoundLatitude>
+          <northBoundLatitude>0.3419516512308869</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.42808314025393" miny="-1.0457549921062155" maxx="-76.08200018178015" maxy="0.3419516512308869"/>
+        <BoundingBox CRS="EPSG:32717" minx="897723.625" miny="9884186.0" maxx="1047837.25" maxy="1.003787E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.0457549921062155" miny="-77.42808314025393" maxx="0.3419516512308869" maxy="-76.08200018178015"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8619254.788272317" miny="-116419.37720624173" maxx="-8469409.518769512" maxy="38066.10967233247"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8619254.788272317" miny="-116419.37720624173" maxx="-8469409.518769512" maxy="38066.10967233247"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_estatales_amazonia_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_fuera_bloques_amazonia_infopublic</Name>
+        <Title>piscinas_fuera_bloques_amazonia_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_fuera_bloques_amazonia_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.43315638793817</westBoundLongitude>
+          <eastBoundLongitude>-76.43313845340525</eastBoundLongitude>
+          <southBoundLatitude>-0.6886431662320858</southBoundLatitude>
+          <northBoundLatitude>-0.6886251121509797</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.43315638793817" miny="-0.6886431662320858" maxx="-76.43313845340525" maxy="-0.6886251121509797"/>
+        <BoundingBox CRS="EPSG:32717" minx="1008681.28271" miny="9923640.15609" maxx="1008683.28271" maxy="9923642.15609"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.6886431662320858" miny="-76.43315638793817" maxx="-0.6886251121509797" maxy="-76.43313845340525"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8508500.048827922" miny="-76661.25235420071" maxx="-8508498.05236485" maxy="-76659.24243791614"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8508500.048827922" miny="-76661.25235420071" maxx="-8508498.05236485" maxy="-76659.24243791614"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_fuera_bloques_amazonia_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_fuera_bloques_petroleros_amazonia_infopriv</Name>
+        <Title>piscinas_fuera_bloques_petroleros_amazonia_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>piscinas_fuera_bloques_petroleros_amazonia_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-76.43315638793817</westBoundLongitude>
+          <eastBoundLongitude>-76.43313845340525</eastBoundLongitude>
+          <southBoundLatitude>-0.6886431662320858</southBoundLatitude>
+          <northBoundLatitude>-0.6886251121509797</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-76.43315638793817" miny="-0.6886431662320858" maxx="-76.43313845340525" maxy="-0.6886251121509797"/>
+        <BoundingBox CRS="EPSG:32717" minx="1008681.28271" miny="9923640.15609" maxx="1008683.28271" maxy="9923642.15609"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.6886431662320858" miny="-76.43315638793817" maxx="-0.6886251121509797" maxy="-76.43313845340525"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8508500.048827922" miny="-76661.25235420071" maxx="-8508498.05236485" maxy="-76659.24243791614"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8508500.048827922" miny="-76661.25235420071" maxx="-8508498.05236485" maxy="-76659.24243791614"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_fuera_bloques_petroleros_amazonia_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_infopublic</Name>
+        <Title>piscinas_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_infopublic</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-79.71093667290047</westBoundLongitude>
+          <eastBoundLongitude>-75.54311132450599</eastBoundLongitude>
+          <southBoundLatitude>-1.4909847999727786</southBoundLatitude>
+          <northBoundLatitude>0.9939640142823181</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-79.71093667290047" miny="-1.4909847999727786" maxx="-75.54311132450599" maxy="0.9939640142823181"/>
+        <BoundingBox CRS="EPSG:32717" minx="643452.0625" miny="9835159.0" maxx="1107937.375" maxy="1.0109891E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.4909847999727786" miny="-79.71093667290047" maxx="0.9939640142823181" maxy="-75.54311132450599"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8873380.881082157" miny="-165994.4043251185" maxx="-8409420.685583584" maxy="110653.11827379739"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8873380.881082157" miny="-165994.4043251185" maxx="-8409420.685583584" maxy="110653.11827379739"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_petroleras_infopriv</Name>
+        <Title>piscinas_petroleras_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_petroleras_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-78.63312274766106</westBoundLongitude>
+          <eastBoundLongitude>-75.54846163053803</eastBoundLongitude>
+          <southBoundLatitude>-1.486856580907534</southBoundLatitude>
+          <northBoundLatitude>0.3445150228441835</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-78.63312274766106" miny="-1.486856580907534" maxx="-75.54846163053803" maxy="0.3445150228441835"/>
+        <BoundingBox CRS="EPSG:32717" minx="763449.5625" miny="9835516.0" maxx="1107340.375" maxy="1.0038112E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.486856580907534" miny="-78.63312274766106" maxx="0.3445150228441835" maxy="-75.54846163053803"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8753399.183754604" miny="-165534.69786924412" maxx="-8410016.278926661" maxy="38351.46801533432"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8753399.183754604" miny="-165534.69786924412" maxx="-8410016.278926661" maxy="38351.46801533432"/>
+        <Style>
+          <Name>piscinas_petroleras</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_petroleras_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_privadas_amazonia_infopriv</Name>
+        <Title>piscinas_privadas_amazonia_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>piscinas_privadas_amazonia_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.76083347728195</westBoundLongitude>
+          <eastBoundLongitude>-76.14366282262742</eastBoundLongitude>
+          <southBoundLatitude>-1.485198989269814</southBoundLatitude>
+          <northBoundLatitude>0.2346711408421728</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.76083347728195" miny="-1.485198989269814" maxx="-76.14366282262742" maxy="0.2346711408421728"/>
+        <BoundingBox CRS="EPSG:32717" minx="860631.4375" miny="9835576.0" maxx="1040860.625" maxy="1.002598E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.485198989269814" miny="-77.76083347728195" maxx="0.23467114084217278" maxy="-76.14366282262742"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8656296.386351567" miny="-165350.11353255625" maxx="-8476273.772549601" maxy="26123.5449415526"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8656296.386351567" miny="-165350.11353255625" maxx="-8476273.772549601" maxy="26123.5449415526"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_privadas_amazonia_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:piscinas_privadas_amazonia_infopublic</Name>
+        <Title>piscinas_privadas_amazonia_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>piscinas_privadas_amazonia_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.76083346118803</westBoundLongitude>
+          <eastBoundLongitude>-76.14366284231369</eastBoundLongitude>
+          <southBoundLatitude>-1.485189956578365</southBoundLatitude>
+          <northBoundLatitude>0.2342917649130939</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.76083346118803" miny="-1.485189956578365" maxx="-76.14366284231369" maxy="0.2342917649130939"/>
+        <BoundingBox CRS="EPSG:32717" minx="860631.4375" miny="9835577.0" maxx="1040860.625" maxy="1.0025938E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.485189956578365" miny="-77.76083346118803" maxx="0.2342917649130939" maxy="-76.14366284231369"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8656296.384559998" miny="-165349.1076800338" maxx="-8476273.774741065" maxy="26081.312652648652"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8656296.384559998" miny="-165349.1076800338" maxx="-8476273.774741065" maxy="26081.312652648652"/>
+        <Style>
+          <Name>piscinas_privadas_amazonia</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=piscinas_privadas_amazonia_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:pisos_bioclimaticos</Name>
+        <Title>pisos_bioclimaticos</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>pisos_bioclimaticos</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0405585998622</westBoundLongitude>
+          <eastBoundLongitude>-75.1445612395522</eastBoundLongitude>
+          <southBoundLatitude>-5.050693286374469</southBoundLatitude>
+          <northBoundLatitude>1.4686739768776946</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0405585998622" miny="-5.050693286374469" maxx="-75.1445612395522" maxy="1.4686739768776946"/>
+        <BoundingBox CRS="EPSG:32717" minx="495504.25" miny="9441732.0" maxx="1150199.75" maxy="1.0162333E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.050693286374469" miny="-81.0405585998622" maxx="1.4686739768776946" maxy="-75.1445612395522"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9021393.716939107" miny="-562970.1840139128" maxx="-8365054.293070913" maxy="163509.94622298027"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9021393.716939107" miny="-562970.1840139128" maxx="-8365054.293070913" maxy="163509.94622298027"/>
+        <Style>
+          <Name>pisos_bioclimaticos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=pisos_bioclimaticos"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plantacion_bloque</Name>
+        <Title>plantacion_bloque</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>plantacion_bloque</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.4924774169922</westBoundLongitude>
+          <eastBoundLongitude>-78.092643737793</eastBoundLongitude>
+          <southBoundLatitude>-4.19603633880615</southBoundLatitude>
+          <northBoundLatitude>1.23546326160431</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.4924774169922" miny="-4.19603633880615" maxx="-78.092643737793" maxy="1.23546326160431"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.19603633880615" miny="-80.4924774169922" maxx="1.23546326160431" maxy="-78.092643737793"/>
+        <BoundingBox CRS="EPSG:32717" minx="556324.921868667" miny="9535603.966597902" maxx="823650.4727082339" maxy="1.0136733151349796E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8960381.598748643" miny="-467518.7238515277" maxx="-8693233.33559164" maxy="137541.80013205766"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8960381.598748643" miny="-467518.7238515277" maxx="-8693233.33559164" maxy="137541.80013205766"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plantacion_bloque"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plantacion_bloque_2013_2</Name>
+        <Title>plantacion_bloque_2013_2</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>plantacion_bloque_2013_2</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.5044784545898</westBoundLongitude>
+          <eastBoundLongitude>-78.0806427001953</eastBoundLongitude>
+          <southBoundLatitude>-4.22319364547729</southBoundLatitude>
+          <northBoundLatitude>1.26262080669403</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.5044784545898" miny="-4.22319364547729" maxx="-78.0806427001953" maxy="1.26262080669403"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.22319364547729" miny="-80.5044784545898" maxx="1.26262080669403" maxy="-78.0806427001953"/>
+        <BoundingBox CRS="EPSG:32717" minx="554991.1058502892" miny="9532593.255111044" maxx="824987.000351872" maxy="1.0139740280605622E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8961717.548143" miny="-470550.0393954856" maxx="-8691897.386197275" maxy="140565.6827506439"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8961717.548143" miny="-470550.0393954856" maxx="-8691897.386197275" maxy="140565.6827506439"/>
+        <Style>
+          <Name>plantacion_bloque_2013_2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plantacion_bloque_2013_2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plantacion_bloque_2013_3p</Name>
+        <Title>plantacion_bloque_2013_3p</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>plantacion_bloque_2013_3p</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.1861267089844</westBoundLongitude>
+          <eastBoundLongitude>-78.6577911376953</eastBoundLongitude>
+          <southBoundLatitude>-1.7514146566391</southBoundLatitude>
+          <northBoundLatitude>1.13057029247284</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.1861267089844" miny="-1.7514146566391" maxx="-78.6577911376953" maxy="1.13057029247284"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.7514146566391" miny="-80.1861267089844" maxx="1.13057029247284" maxy="-78.6577911376953"/>
+        <BoundingBox CRS="EPSG:32717" minx="590524.75443102" miny="9806252.597667428" maxx="760701.1748689068" maxy="1.0125067312866056E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8926278.793929057" miny="-194996.95762676743" maxx="-8756145.256371906" maxy="125862.67715033308"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8926278.793929057" miny="-194996.95762676743" maxx="-8756145.256371906" maxy="125862.67715033308"/>
+        <Style>
+          <Name>plantacion_bloque_2013_3p</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plantacion_bloque_2013_3p"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plantacion_lindero_2013_2</Name>
+        <Title>plantacion_lindero_2013_2</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>plantacion_lindero_2013_2</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.4474945068359</westBoundLongitude>
+          <eastBoundLongitude>-78.0793914794922</eastBoundLongitude>
+          <southBoundLatitude>-4.29203987121582</southBoundLatitude>
+          <northBoundLatitude>1.25690793991089</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.4474945068359" miny="-4.29203987121582" maxx="-78.0793914794922" maxy="1.25690793991089"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.29203987121582" miny="-80.4474945068359" maxx="1.25690793991089" maxy="-78.0793914794922"/>
+        <BoundingBox CRS="EPSG:32717" minx="561309.7053621538" miny="9524972.880857095" maxx="825126.9538553649" maxy="1.013910816476857E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8955374.124095643" miny="-478235.17513480154" maxx="-8691758.100945735" maxy="139929.57557873725"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8955374.124095643" miny="-478235.17513480154" maxx="-8691758.100945735" maxy="139929.57557873725"/>
+        <Style>
+          <Name>plantacion_lindero_2013_2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plantacion_lindero_2013_2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plantacion_lindero_2013_3p</Name>
+        <Title>plantacion_lindero_2013_3p</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>plantacion_lindero_2013_3p</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.1796722412109</westBoundLongitude>
+          <eastBoundLongitude>-79.9548873901367</eastBoundLongitude>
+          <southBoundLatitude>-0.490408897399902</southBoundLatitude>
+          <northBoundLatitude>-0.314325600862503</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.1796722412109" miny="-0.490408897399902" maxx="-79.9548873901367" maxy="-0.314325600862503"/>
+        <BoundingBox CRS="EPSG:4326" minx="-0.490408897399902" miny="-80.1796722412109" maxx="-0.314325600862503" maxy="-79.9548873901367"/>
+        <BoundingBox CRS="EPSG:32717" minx="591281.7589470478" miny="9945785.989486817" maxx="616299.6211716897" maxy="9965253.988206776"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8925560.285863169" miny="-54592.73532732744" maxx="-8900537.350703549" maxy="-34990.74134751105"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8925560.285863169" miny="-54592.73532732744" maxx="-8900537.350703549" maxy="-34990.74134751105"/>
+        <Style>
+          <Name>plantacion_lindero_2013_3p</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plantacion_lindero_2013_3p"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plantacion_linderos_2013</Name>
+        <Title>plantacion_linderos_2013</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>plantacion_linderos_2013</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.4357681274414</westBoundLongitude>
+          <eastBoundLongitude>-78.0911178588867</eastBoundLongitude>
+          <southBoundLatitude>-4.2645697593689</southBoundLatitude>
+          <northBoundLatitude>1.22943794727325</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.4357681274414" miny="-4.2645697593689" maxx="-78.0911178588867" maxy="1.22943794727325"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.2645697593689" miny="-80.4357681274414" maxx="1.22943794727325" maxy="-78.0911178588867"/>
+        <BoundingBox CRS="EPSG:32717" minx="562613.2152024239" miny="9528018.188076926" maxx="823821.0021127863" maxy="1.0136066491938507E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8954068.749512602" miny="-475168.6712849803" maxx="-8693063.47552878" maxy="136870.91000614315"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8954068.749512602" miny="-475168.6712849803" maxx="-8693063.47552878" maxy="136870.91000614315"/>
+        <Style>
+          <Name>line</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plantacion_linderos_2013"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plataformas_petroleras_infopriv</Name>
+        <Title>plataformas_petroleras_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>plataformas_petroleras_infopriv</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.46090982045895</westBoundLongitude>
+          <eastBoundLongitude>-75.87919056174093</eastBoundLongitude>
+          <southBoundLatitude>-1.4597226964676382</southBoundLatitude>
+          <northBoundLatitude>0.40669953739558</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.46090982045895" miny="-1.4597226964676382" maxx="-75.87919056174093" maxy="0.40669953739558"/>
+        <BoundingBox CRS="EPSG:32717" minx="894063.9375" miny="9838346.0" maxx="1070399.0" maxy="1.0045039E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.4597226964676382" miny="-77.46090982045895" maxx="0.40669953739557996" maxy="-75.87919056174093"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8622909.037597174" miny="-162513.16878364494" maxx="-8446832.85513877" maxy="45273.96559918356"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8622909.037597174" miny="-162513.16878364494" maxx="-8446832.85513877" maxy="45273.96559918356"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plataformas_petroleras_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:plataformas_petroleras_infopublic</Name>
+        <Title>plataformas_petroleras_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>plataformas_petroleras_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.46090982045895</westBoundLongitude>
+          <eastBoundLongitude>-75.87919056174093</eastBoundLongitude>
+          <southBoundLatitude>-1.4597226964676382</southBoundLatitude>
+          <northBoundLatitude>0.40669953739558</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.46090982045895" miny="-1.4597226964676382" maxx="-75.87919056174093" maxy="0.40669953739558"/>
+        <BoundingBox CRS="EPSG:32717" minx="894063.9375" miny="9838346.0" maxx="1070399.0" maxy="1.0045039E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-1.4597226964676382" miny="-77.46090982045895" maxx="0.40669953739557996" maxy="-75.87919056174093"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8622909.037597174" miny="-162513.16878364494" maxx="-8446832.85513877" maxy="45273.96559918356"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8622909.037597174" miny="-162513.16878364494" maxx="-8446832.85513877" maxy="45273.96559918356"/>
+        <Style>
+          <Name>plataformas_petroleras</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=plataformas_petroleras_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:pozos_petroleros_infopriv</Name>
+        <Title>pozos_petroleros_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>pozos_petroleros_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.05772764022018</westBoundLongitude>
+          <eastBoundLongitude>-75.52990984600414</eastBoundLongitude>
+          <southBoundLatitude>-3.3144626757909625</southBoundLatitude>
+          <northBoundLatitude>0.4340807593469674</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.05772764022018" miny="-3.3144626757909625" maxx="-75.52990984600414" maxy="0.4340807593469674"/>
+        <BoundingBox CRS="EPSG:32717" minx="493587.03125" miny="9633648.0" maxx="1108607.25" maxy="1.0047979E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.3144626757909625" miny="-81.05772764022018" maxx="0.43408075934696744" maxy="-75.52990984600414"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9023304.965769166" miny="-369170.25483063917" maxx="-8407951.103719043" maxy="48322.11136028396"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9023304.965769166" miny="-369170.25483063917" maxx="-8407951.103719043" maxy="48322.11136028396"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=pozos_petroleros_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:pozos_petroleros_infopublic</Name>
+        <Title>pozos_petroleros_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>pozos_petroleros_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.05772764022018</westBoundLongitude>
+          <eastBoundLongitude>-75.52990984600414</eastBoundLongitude>
+          <southBoundLatitude>-3.3144626757909625</southBoundLatitude>
+          <northBoundLatitude>0.4340807593469674</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.05772764022018" miny="-3.3144626757909625" maxx="-75.52990984600414" maxy="0.4340807593469674"/>
+        <BoundingBox CRS="EPSG:32717" minx="493587.03125" miny="9633648.0" maxx="1108607.25" maxy="1.0047979E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.3144626757909625" miny="-81.05772764022018" maxx="0.43408075934696744" maxy="-75.52990984600414"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9023304.965769166" miny="-369170.25483063917" maxx="-8407951.103719043" maxy="48322.11136028396"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9023304.965769166" miny="-369170.25483063917" maxx="-8407951.103719043" maxy="48322.11136028396"/>
+        <Style>
+          <Name>pozos_petroleros</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=pozos_petroleros_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:procesos_administrativos</Name>
+        <Title>procesos_administrativos</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>procesos_administrativos</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.823600769043</westBoundLongitude>
+          <eastBoundLongitude>-75.5290451049805</eastBoundLongitude>
+          <southBoundLatitude>-4.83602142333984</southBoundLatitude>
+          <northBoundLatitude>1.27025640010834</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.823600769043" miny="-4.83602142333984" maxx="-75.5290451049805" maxy="1.27025640010834"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.83602142333984" miny="-80.823600769043" maxx="1.27025640010834" maxy="-75.5290451049805"/>
+        <BoundingBox CRS="EPSG:32717" minx="519559.43635326" miny="9463010.613467079" maxx="1109707.8763321456" maxy="1.0141048380979927E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8997242.0816887" miny="-538983.7869078538" maxx="-8407854.84118862" maxy="141415.88080242628"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8997242.0816887" miny="-538983.7869078538" maxx="-8407854.84118862" maxy="141415.88080242628"/>
+        <Style>
+          <Name>procesos_administrativos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=procesos_administrativos"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>provincias:provincias</Name>
+        <Title>provincias</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>provincias</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-92.0089666293829</westBoundLongitude>
+          <eastBoundLongitude>-75.1871465530413</eastBoundLongitude>
+          <southBoundLatitude>-5.0161573230249</southBoundLatitude>
+          <northBoundLatitude>1.6818346083076</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-92.0089666293829" miny="-5.0161573230249" maxx="-75.1871465530413" maxy="1.6818346083076"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.0161573230249" miny="-92.0089666293829" maxx="1.6818346083076" maxy="-75.1871465530413"/>
+        <BoundingBox CRS="EPSG:32717" minx="-732624.4915916352" miny="9435137.91048954" maxx="1147915.104292971" maxy="1.0189400957771799E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.0242391313598204E7" miny="-559110.7749980756" maxx="-8369794.868483792" maxy="187247.8638864526"/>
+        <BoundingBox CRS="EPSG:900913" minx="-1.0242391313598204E7" miny="-559110.7749980756" maxx="-8369794.868483792" maxy="187247.8638864526"/>
+        <Style>
+          <Name>Provincias</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=provincias"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:reciclar_final</Name>
+        <Title>reciclar_final</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>reciclar_final</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.97888276094537</westBoundLongitude>
+          <eastBoundLongitude>-76.85332317506692</eastBoundLongitude>
+          <southBoundLatitude>-4.093857373936019</southBoundLatitude>
+          <northBoundLatitude>0.9936382531216632</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.97888276094537" miny="-4.093857373936019" maxx="-76.85332317506692" maxy="0.9936382531216632"/>
+        <BoundingBox CRS="EPSG:32717" minx="502349.8125" miny="9547498.0" maxx="960658.875" maxy="1.0109827E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.093857373936019" miny="-80.97888276094537" maxx="0.9936382531216632" maxy="-76.85332317506692"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9014527.993956639" miny="-456114.38266195613" maxx="-8555272.80161934" maxy="110616.84925159483"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9014527.993956639" miny="-456114.38266195613" maxx="-8555272.80161934" maxy="110616.84925159483"/>
+        <Style>
+          <Name>reciclaje5</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=reciclar_final"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:regimenes_inundacion</Name>
+        <Title>regimenes_inundacion</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>regimenes_inundacion</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-79.86170710555109</westBoundLongitude>
+          <eastBoundLongitude>-75.16713624178689</eastBoundLongitude>
+          <southBoundLatitude>-3.148141928771851</southBoundLatitude>
+          <northBoundLatitude>1.4793455910667654</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-79.86170710555109" miny="-3.148141928771851" maxx="-75.16713624178689" maxy="1.4793455910667654"/>
+        <BoundingBox CRS="EPSG:32717" minx="626671.8125" miny="9651963.0" maxx="1149211.625" maxy="1.0163545E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.148141928771851" miny="-79.86170710555109" maxx="1.4793455910667654" maxy="-75.16713624178689"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8890164.568871504" miny="-350626.0242895537" maxx="-8367567.330824336" maxy="164698.29811211134"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8890164.568871504" miny="-350626.0242895537" maxx="-8367567.330824336" maxy="164698.29811211134"/>
+        <Style>
+          <Name>REGIMENES_INUNDACIONBDD</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=regimenes_inundacion"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:relleno_celdas_botaderos</Name>
+        <Title>relleno_celdas_botaderos</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>relleno_celdas_botaderos</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-91.0061094090604</westBoundLongitude>
+          <eastBoundLongitude>-75.5282606998743</eastBoundLongitude>
+          <southBoundLatitude>-4.86873473584596</southBoundLatitude>
+          <northBoundLatitude>1.2816835386957</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-91.0061094090604" miny="-4.86873473584596" maxx="-75.5282606998743" maxy="1.2816835386957"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.86873473584596" miny="-91.0061094090604" maxx="1.2816835386957" maxy="-75.5282606998743"/>
+        <BoundingBox CRS="EPSG:32717" minx="-619160.3081075829" miny="9453517.205805501" maxx="1109795.3699364904" maxy="1.0143867231779406E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.0130753758493546E7" miny="-542638.5149871345" maxx="-8407767.521611622" maxy="142688.25955674946"/>
+        <BoundingBox CRS="EPSG:900913" minx="-1.0130753758493546E7" miny="-542638.5149871345" maxx="-8407767.521611622" maxy="142688.25955674946"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=relleno_celdas_botaderos"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:restauracion_2011_2012</Name>
+        <Title>restauracion_2011_2012</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>restauracion_2011_2012</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.44193655826115</westBoundLongitude>
+          <eastBoundLongitude>-79.05328555161596</eastBoundLongitude>
+          <southBoundLatitude>-4.712758090762383</southBoundLatitude>
+          <northBoundLatitude>-3.2861112383547137</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.44193655826115" miny="-4.712758090762383" maxx="-79.05328555161596" maxy="-3.2861112383547137"/>
+        <BoundingBox CRS="EPSG:32717" minx="561997.9375" miny="9479062.0" maxx="715935.125" maxy="9636572.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.712758090762383" miny="-80.44193655826115" maxx="-3.2861112383547137" maxy="-79.05328555161596"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8954755.41609045" miny="-525214.3952542305" maxx="-8800171.493141139" maxy="-366008.94427547837"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8954755.41609045" miny="-525214.3952542305" maxx="-8800171.493141139" maxy="-366008.94427547837"/>
+        <Style>
+          <Name>restauracion_2011_2012</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=restauracion_2011_2012"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:restauracion_forestal2014</Name>
+        <Title>restauracion_forestal2014</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>restauracion_forestal2014</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-79.8112716674805</westBoundLongitude>
+          <eastBoundLongitude>-78.4924850463867</eastBoundLongitude>
+          <southBoundLatitude>-3.645663022995</southBoundLatitude>
+          <northBoundLatitude>1.06838309764862</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-79.8112716674805" miny="-3.645663022995" maxx="-78.4924850463867" maxy="1.06838309764862"/>
+        <BoundingBox CRS="EPSG:4326" minx="-3.645663022995" miny="-79.8112716674805" maxx="1.06838309764862" maxy="-78.4924850463867"/>
+        <BoundingBox CRS="EPSG:32717" minx="632019.2688682103" miny="9596651.477104519" maxx="779109.9681494506" maxy="1.011820248704173E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8884550.121587552" miny="-406107.4734770507" maxx="-8737743.466462407" maxy="118938.75516743725"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8884550.121587552" miny="-406107.4734770507" maxx="-8737743.466462407" maxy="118938.75516743725"/>
+        <Style>
+          <Name>point</Name>
+          <Title>Default Point</Title>
+          <Abstract>A sample style that draws a point</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=restauracion_forestal2014"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:restauracion_forestal_2014_2</Name>
+        <Title>restauracion_forestal_2014_2</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>restauracion_forestal_2014_2</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.9261093139648</westBoundLongitude>
+          <eastBoundLongitude>-76.856803894043</eastBoundLongitude>
+          <southBoundLatitude>-4.48546075820923</southBoundLatitude>
+          <northBoundLatitude>1.47515916824341</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.9261093139648" miny="-4.48546075820923" maxx="-76.856803894043" maxy="1.47515916824341"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.48546075820923" miny="-80.9261093139648" maxx="1.47515916824341" maxy="-76.856803894043"/>
+        <BoundingBox CRS="EPSG:32717" minx="508197.1706178308" miny="9502909.135867126" maxx="961422.7775914231" maxy="1.0163479703925699E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9008653.280711355" miny="-499830.02061334514" maxx="-8555660.273483353" maxy="164232.11271321325"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9008653.280711355" miny="-499830.02061334514" maxx="-8555660.273483353" maxy="164232.11271321325"/>
+        <Style>
+          <Name>restauracion_forestal_2014_2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=restauracion_forestal_2014_2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:restauracion_forestal_2014_convenios</Name>
+        <Title>restauracion_forestal_2014_convenios</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>restauracion_forestal_2014_convenios</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.8920059204102</westBoundLongitude>
+          <eastBoundLongitude>-76.6727447509766</eastBoundLongitude>
+          <southBoundLatitude>-4.47308015823364</southBoundLatitude>
+          <northBoundLatitude>1.44396829605103</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.8920059204102" miny="-4.47308015823364" maxx="-76.6727447509766" maxy="1.44396829605103"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.47308015823364" miny="-80.8920059204102" maxx="1.44396829605103" maxy="-76.6727447509766"/>
+        <BoundingBox CRS="EPSG:32717" minx="511980.68533657683" miny="9504162.957248723" maxx="981961.3388865793" maxy="1.0160061384767545E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9004856.908306533" miny="-498447.5961241535" maxx="-8535170.903401354" maxy="160758.83375610563"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9004856.908306533" miny="-498447.5961241535" maxx="-8535170.903401354" maxy="160758.83375610563"/>
+        <Style>
+          <Name>restauracion_convenios_2014</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=restauracion_forestal_2014_convenios"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:restauracion_forestal_2014_proceso</Name>
+        <Title>restauracion_forestal_2014_proceso</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>restauracion_forestal_2014_proceso</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.8852920532227</westBoundLongitude>
+          <eastBoundLongitude>-78.0217971801758</eastBoundLongitude>
+          <southBoundLatitude>-4.47254753112793</southBoundLatitude>
+          <northBoundLatitude>1.33690226078033</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.8852920532227" miny="-4.47254753112793" maxx="-78.0217971801758" maxy="1.33690226078033"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.47254753112793" miny="-80.8852920532227" maxx="1.33690226078033" maxy="-78.0217971801758"/>
+        <BoundingBox CRS="EPSG:32717" minx="512725.52085831156" miny="9504968.665404128" maxx="831542.9200244779" maxy="1.0147969263852725E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9004109.524029968" miny="-498388.1232182185" maxx="-8685346.732873237" maxy="148836.7850983198"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9004109.524029968" miny="-498388.1232182185" maxx="-8685346.732873237" maxy="148836.7850983198"/>
+        <Style>
+          <Name>restauracion_procesos_2014</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=restauracion_forestal_2014_proceso"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:sector_subsector</Name>
+        <Title>sector_subsector</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>sector_subsector</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0394897460938</westBoundLongitude>
+          <eastBoundLongitude>-75.840705871582</eastBoundLongitude>
+          <southBoundLatitude>-4.96481561660767</southBoundLatitude>
+          <northBoundLatitude>1.31960105895996</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0394897460938" miny="-4.96481561660767" maxx="-75.840705871582" maxy="1.31960105895996"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.96481561660767" miny="-81.0394897460938" maxx="1.31960105895996" maxy="-75.840705871582"/>
+        <BoundingBox CRS="EPSG:32717" minx="495605.8288704594" miny="9448988.708444452" maxx="1074876.457955423" maxy="1.014645296903259E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9021274.732681878" miny="-553373.6938087996" maxx="-8442548.759026943" maxy="146910.3064713909"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9021274.732681878" miny="-553373.6938087996" maxx="-8442548.759026943" maxy="146910.3064713909"/>
+        <Style>
+          <Name>sector_subsector</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=sector_subsector"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:siembraton</Name>
+        <Title>siembraton</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>siembraton</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.50088051957223</westBoundLongitude>
+          <eastBoundLongitude>-77.8153207665394</eastBoundLongitude>
+          <southBoundLatitude>-4.773639161753094</southBoundLatitude>
+          <northBoundLatitude>1.4859159218577915</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.50088051957223" miny="-4.773639161753094" maxx="-77.8153207665394" maxy="1.4859159218577915"/>
+        <BoundingBox CRS="EPSG:32717" minx="555538.5625" miny="9472337.0" maxx="853338.375" maxy="1.0164245E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.773639161753094" miny="-80.50088051957223" maxx="1.4859159218577915" maxy="-77.8153207665394"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8961317.027848938" miny="-532014.9350353664" maxx="-8662361.883646412" maxy="165429.94893653077"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8961317.027848938" miny="-532014.9350353664" maxx="-8662361.883646412" maxy="165429.94893653077"/>
+        <Style>
+          <Name>siembraton2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=siembraton"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:snap</Name>
+        <Title>snap</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>snap</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-92.5887845061031</westBoundLongitude>
+          <eastBoundLongitude>-75.2211265137439</eastBoundLongitude>
+          <southBoundLatitude>-4.79678232526586</southBoundLatitude>
+          <northBoundLatitude>2.24825433862875</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-92.5887845061031" miny="-4.79678232526586" maxx="-75.2211265137439" maxy="2.24825433862875"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.79678232526586" miny="-92.5887845061031" maxx="2.24825433862875" maxy="-75.2211265137439"/>
+        <BoundingBox CRS="EPSG:32717" minx="-798484.0373954221" miny="9458742.504663419" maxx="1144143.392451057" maxy="1.0253702587332614E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.0306936344387533E7" miny="-534600.231475143" maxx="-8373577.50040638" maxy="250338.7789046436"/>
+        <BoundingBox CRS="EPSG:900913" minx="-1.0306936344387533E7" miny="-534600.231475143" maxx="-8373577.50040638" maxy="250338.7789046436"/>
+        <Style>
+          <Name>snap</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=snap"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:suceptibilidad_incendios</Name>
+        <Title>suceptibilidad_incendios</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>suceptibilidad_incendios</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0926036590913</westBoundLongitude>
+          <eastBoundLongitude>-75.1998177673114</eastBoundLongitude>
+          <southBoundLatitude>-5.01350943570138</southBoundLatitude>
+          <northBoundLatitude>1.45810298911935</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0926036590913" miny="-5.01350943570138" maxx="-75.1998177673114" maxy="1.45810298911935"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.01350943570138" miny="-81.0926036590913" maxx="1.45810298911935" maxy="-75.1998177673114"/>
+        <BoundingBox CRS="EPSG:32717" minx="489695.75126644695" miny="9442986.097170394" maxx="1146513.5596914687" maxy="1.0161999155586118E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9027187.346430797" miny="-558814.8808766584" maxx="-8371205.421604072" maxy="162332.80531969812"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9027187.346430797" miny="-558814.8808766584" maxx="-8371205.421604072" maxy="162332.80531969812"/>
+        <Style>
+          <Name>susceptibilidad_incendios</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=suceptibilidad_incendios"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:superficie_continental</Name>
+        <Title>superficie_continental</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>superficie_continental</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.1224212646484</westBoundLongitude>
+          <eastBoundLongitude>-75.191764831543</eastBoundLongitude>
+          <southBoundLatitude>-4.99896001815796</southBoundLatitude>
+          <northBoundLatitude>1.48670327663422</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.1224212646484" miny="-4.99896001815796" maxx="-75.191764831543" maxy="1.48670327663422"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.99896001815796" miny="-81.1224212646484" maxx="1.48670327663422" maxy="-75.191764831543"/>
+        <BoundingBox CRS="EPSG:32717" minx="486377.9071831849" miny="9444594.624206748" maxx="1147412.245050343" maxy="1.0165179098690052E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9030506.627098087" miny="-557189.04489421" maxx="-8370308.972894941" maxy="165517.62636827998"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9030506.627098087" miny="-557189.04489421" maxx="-8370308.972894941" maxy="165517.62636827998"/>
+        <Style>
+          <Name>superficie_continental</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=superficie_continental"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:unidades_biogeograficas</Name>
+        <Title>unidades_biogeograficas</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>unidades_biogeograficas</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.1226238482503</westBoundLongitude>
+          <eastBoundLongitude>-75.144105732054</eastBoundLongitude>
+          <southBoundLatitude>-5.050818668272048</southBoundLatitude>
+          <northBoundLatitude>1.4961564750482976</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.1226238482503" miny="-5.050818668272048" maxx="-75.144105732054" maxy="1.4961564750482976"/>
+        <BoundingBox CRS="EPSG:32717" minx="486407.65625" miny="9441717.0" maxx="1150250.375" maxy="1.0165371E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.050818668272048" miny="-81.1226238482503" maxx="1.4961564750482976" maxy="-75.144105732054"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9030529.178601494" miny="-562984.1958695472" maxx="-8365003.586208161" maxy="166570.30822110962"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9030529.178601494" miny="-562984.1958695472" maxx="-8365003.586208161" maxy="166570.30822110962"/>
+        <Style>
+          <Name>unidades_biogeograficas</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=unidades_biogeograficas"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:unidades_geomorfologicas</Name>
+        <Title>unidades_geomorfologicas</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>unidades_geomorfologicas</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.11346187782597</westBoundLongitude>
+          <eastBoundLongitude>-75.1383088699575</eastBoundLongitude>
+          <southBoundLatitude>-5.050548936946178</southBoundLatitude>
+          <northBoundLatitude>1.5082531187817219</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.11346187782597" miny="-5.050548936946178" maxx="-75.1383088699575" maxy="1.5082531187817219"/>
+        <BoundingBox CRS="EPSG:32717" minx="487423.21875" miny="9441747.0" maxx="1150896.625" maxy="1.0166708E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.050548936946178" miny="-81.11346187782597" maxx="1.5082531187817219" maxy="-75.1383088699575"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9029509.272719195" miny="-562954.0524752423" maxx="-8364358.28247138" maxy="167917.36340439852"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9029509.272719195" miny="-562954.0524752423" maxx="-8364358.28247138" maxy="167917.36340439852"/>
+        <Style>
+          <Name>unidades_geomorfologicas</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=unidades_geomorfologicas"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:vulnerabilidad_incendios</Name>
+        <Title>vulnerabilidad_incendios</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>vulnerabilidad_incendios</Keyword>
+        </KeywordList>
+        <CRS>EPSG:4326</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-81.0926036590913</westBoundLongitude>
+          <eastBoundLongitude>-75.1998177673114</eastBoundLongitude>
+          <southBoundLatitude>-5.0135094355201</southBoundLatitude>
+          <northBoundLatitude>1.45810298929989</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-81.0926036590913" miny="-5.0135094355201" maxx="-75.1998177673114" maxy="1.45810298929989"/>
+        <BoundingBox CRS="EPSG:4326" minx="-5.0135094355201" miny="-81.0926036590913" maxx="1.45810298929989" maxy="-75.1998177673114"/>
+        <BoundingBox CRS="EPSG:32717" minx="489695.7512664471" miny="9442986.097190535" maxx="1146513.5596914552" maxy="1.0161999155606177E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-9027187.346430797" miny="-558814.8808564015" maxx="-8371205.421604072" maxy="162332.805339803"/>
+        <BoundingBox CRS="EPSG:900913" minx="-9027187.346430797" miny="-558814.8808564015" maxx="-8371205.421604072" maxy="162332.805339803"/>
+        <Style>
+          <Name>vulnerabilidad_incendios_portal</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=vulnerabilidad_incendios"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:zonas_estudio_puyango_infopriv</Name>
+        <Title>zonas_estudio_puyango_infopriv</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>zonas_estudio_puyango_infopriv</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.48446422807682</westBoundLongitude>
+          <eastBoundLongitude>-79.36576941985749</eastBoundLongitude>
+          <southBoundLatitude>-4.220442654176543</southBoundLatitude>
+          <northBoundLatitude>-3.491908222699758</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.48446422807682" miny="-4.220442654176543" maxx="-79.36576941985749" maxy="-3.491908222699758"/>
+        <BoundingBox CRS="EPSG:32717" minx="557261.1238" miny="9533486.8405" maxx="681383.9653" maxy="9613876.975"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.220442654176543" miny="-80.48446422807682" maxx="-3.491908222699758" maxy="-79.36576941985749"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8959489.574638953" miny="-470242.967209191" maxx="-8834957.038234899" maxy="-388958.30635818734"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8959489.574638953" miny="-470242.967209191" maxx="-8834957.038234899" maxy="-388958.30635818734"/>
+        <Style>
+          <Name>zonas_estudio_puyango</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=zonas_estudio_puyango_infopriv"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>geosuia:zonas_estudio_puyango_infopublic</Name>
+        <Title>zonas_estudio_puyango_infopublic</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>zonas_estudio_puyango_infopublic</Keyword>
+        </KeywordList>
+        <CRS>EPSG:32717</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-80.48446422807682</westBoundLongitude>
+          <eastBoundLongitude>-79.36576941985749</eastBoundLongitude>
+          <southBoundLatitude>-4.220442654176543</southBoundLatitude>
+          <northBoundLatitude>-3.491908222699758</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-80.48446422807682" miny="-4.220442654176543" maxx="-79.36576941985749" maxy="-3.491908222699758"/>
+        <BoundingBox CRS="EPSG:32717" minx="557261.1238" miny="9533486.8405" maxx="681383.9653" maxy="9613876.975"/>
+        <BoundingBox CRS="EPSG:4326" minx="-4.220442654176543" miny="-80.48446422807682" maxx="-3.491908222699758" maxy="-79.36576941985749"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8959489.574638953" miny="-470242.967209191" maxx="-8834957.038234899" maxy="-388958.30635818734"/>
+        <BoundingBox CRS="EPSG:900913" minx="-8959489.574638953" miny="-470242.967209191" maxx="-8834957.038234899" maxy="-388958.30635818734"/>
+        <Style>
+          <Name>zonas_estudio_puyango</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoportal.ambiente.gob.ec:80/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=zonas_estudio_puyango_infopublic"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>wms.js demo</title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.18/require.min.js" data-main="demo.js"></script>
+	</head>
+	<body>
+        <h1>wms.js demo</h1>
+        <h3>Select WMS Service or Capabilities document:</h3>
+        <select id="select">
+            <option></option>
+            <option>http://demo.geomati.co/geoserver/wms</option>
+            <option>../test-data/ecuador.xml</option>
+            <option>../test-data/pry.xml</option>
+            <option>../test-data/drc.xml</option>
+            <option>ThisIsAnError</option>
+        </select>
+        <hr/>
+        <h3>Parsed Response:</h3>
+        <pre id="response"></pre>
+    </body>
+</html>
